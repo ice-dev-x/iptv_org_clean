@@ -18,7 +18,7 @@ LATAM_COUNTRIES = {
 # Pega aquí tus enlaces funcionales usando el formato estándar M3U. 
 # Como se procesan primero, siempre serán la opción principal en tu reproductor.
 MIS_CANALES_PROPIOS = """
-#EXTINF:-1 tvg-id="Curiquingue Tv" group-title="Ecuador",Teleamazonas (Mi Link VIP)
+#EXTINF:-1 tvg-id="Curiquingue Tv" group-title="Ecuador",Curiquinge TV (Mi Link VIP)
 https://stream.ovalcast.com:5443/LiveApp/streams/wIZDyk6GTPuIpifQ868504716815490.m3u8
 
 
