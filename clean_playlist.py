@@ -25,6 +25,7 @@ https://stream.ovalcast.com:5443/LiveApp/streams/wIZDyk6GTPuIpifQ868504716815490
 #EXTVLCOPT:http-referrer=https://rudo.video/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/ecuavisa/ecuavisa.smil/playlist_dvr.m3u8?did=r1us16985604812eb707168c403a92b04f5cdc70ab8e8c&ndvc=0
+
 #EXTINF:-1 tvg-id="RTU.ec" group-title="Ecuador",RTU (En Vivo)
 #EXTVLCOPT:http-referrer=https://canalrtu.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
