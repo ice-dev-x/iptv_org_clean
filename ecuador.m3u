@@ -1,6 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Curiquingue Tv" group-title="Ecuador",Curiquinge TV (Mi Link VIP)
 https://stream.ovalcast.com:5443/LiveApp/streams/wIZDyk6GTPuIpifQ868504716815490.m3u8
+#EXTINF:-1 tvg-id="Ecuavisa.ec" group-title="Ecuador",Ecuavisa HD
+#EXTVLCOPT:http-referrer=https://www.ecuavisa.com/
+https://rudo.video/live/ecuavisa?dXNlcj0xOTE1MDk=
 #EXTINF:-1 tvg-id="AmericaEstereoGuayaquil.ec@SD" group-title="Ecuador",América Estéreo Guayaquil (360p)
 https://video.makrodigital.com/americaestereoguayaquil/americaestereoguayaquil/playlist.m3u8
 #EXTINF:-1 tvg-id="AmericaEstereoIbarra.ec@SD" group-title="Ecuador",América Estéreo Ibarra (720p)
