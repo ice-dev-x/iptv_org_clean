@@ -1,38 +1,113 @@
-import re
 import urllib.request
+import re
 
-PLAYLISTS = {
-    "ecuador.m3u": "https://iptv-org.github.io/iptv/countries/ec.m3u",
-    "latam.m3u": "https://iptv-org.github.io/iptv/regions/latam.m3u"
+RAW_BASE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/"
+
+# Convertimos la lista en un diccionario para asignar el nombre real del país
+LATAM_COUNTRIES = {
+    "ar": "Argentina", "bo": "Bolivia", "br": "Brasil", "cl": "Chile", 
+    "co": "Colombia", "cr": "Costa Rica", "cu": "Cuba", "do": "República Dominicana", 
+    "ec": "Ecuador", "sv": "El Salvador", "gt": "Guatemala", "hn": "Honduras", 
+    "mx": "México", "ni": "Nicaragua", "pa": "Panamá", "py": "Paraguay", 
+    "pe": "Perú", "pr": "Puerto Rico", "uy": "Uruguay", "ve": "Venezuela"
 }
 
-def clean_m3u(source_url: str, output_path: str):
-    req = urllib.request.Request(source_url, headers={"User-Agent": "Mozilla/5.0"})
+def download_content(url):
+    print(f"Descargando {url} ...")
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     with urllib.request.urlopen(req) as response:
-        content = response.read().decode("utf-8")
+        return response.read().decode('utf-8').splitlines()
 
-    lines = content.splitlines()
+def process_playlist(lines, output_file):
     seen_ids = {}
-    processed_lines = []
-
+    seen_names = {}
+    new_lines = []
+    
     for line in lines:
         if line.startswith("#EXTINF:"):
-            match = re.search(r'tvg-id="([^"]+)"', line)
-            if match:
-                tvg_id = match.group(1)
-                if tvg_id:
-                    if tvg_id in seen_ids:
-                        seen_ids[tvg_id] += 1
-                        new_id = f'{tvg_id}_{seen_ids[tvg_id]}'
-                        line = re.sub(r'tvg-id="[^"]+"', f'tvg-id="{new_id}"', line)
-                    else:
-                        seen_ids[tvg_id] = 1
-        processed_lines.append(line)
+            parts = line.split(",", 1)
+            if len(parts) == 2:
+                prefix = parts[0]
+                channel_name = parts[1].strip()
+                
+                # Garantizar tvg-id único
+                match_id = re.search(r'tvg-id="([^"]+)"', prefix)
+                if match_id:
+                    original_id = match_id.group(1)
+                    seen_ids[original_id] = seen_ids.get(original_id, 0) + 1
+                    if seen_ids[original_id] > 1:
+                        new_id = f"{original_id}_{seen_ids[original_id]}"
+                        prefix = re.sub(r'tvg-id="([^"]+)"', f'tvg-id="{new_id}"', prefix)
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(processed_lines))
-    print(f"[OK] Guardado correctamente en: {output_path}")
+                # Garantizar nombres de canal únicos
+                seen_names[channel_name] = seen_names.get(channel_name, 0) + 1
+                if seen_names[channel_name] > 1:
+                    new_name = f"{channel_name} (Opcion {seen_names[channel_name]})"
+                else:
+                    new_name = channel_name
+                
+                new_line = f"{prefix},{new_name}"
+                new_lines.append(new_line)
+            else:
+                new_lines.append(line)
+        else:
+            new_lines.append(line)
+            
+    with open(output_file, 'w', encoding='utf-8') as f:
+        for line in new_lines:
+            f.write(line + "\n")
+            
+    print(f"[OK] {output_file} guardado exitosamente.\n")
+
+def main():
+    print("--- PROCESANDO LATAM CON CATEGORÍAS POR PAÍS ---")
+    latam_lines = ["#EXTM3U"]
+    
+    for country_code, country_name in LATAM_COUNTRIES.items():
+        url = f"{RAW_BASE}{country_code}.m3u"
+        try:
+            lines = download_content(url)
+            for line in lines:
+                if line.strip().upper() == "#EXTM3U":
+                    continue
+                
+                if line.startswith("#EXTINF:"):
+                    # Si ya trae un grupo predeterminado desde iptv-org, lo sobreescribimos
+                    if 'group-title=' in line:
+                        line = re.sub(r'group-title="[^"]*"', f'group-title="{country_name}"', line)
+                    else:
+                        # Si no lo tiene, lo insertamos justo antes de la coma
+                        parts = line.split(",", 1)
+                        if len(parts) == 2:
+                            line = f'{parts[0]} group-title="{country_name}",{parts[1]}'
+                            
+                latam_lines.append(line)
+        except urllib.error.HTTPError:
+            pass # Ignoramos si el país no tiene un archivo RAW disponible temporalmente
+        except Exception as e:
+            print(f"  -> Error con {country_name}: {e}")
+            
+    process_playlist(latam_lines, "latam.m3u")
+    
+    print("--- PROCESANDO ECUADOR INDIVIDUAL ---")
+    try:
+        ec_lines = ["#EXTM3U"]
+        url = f"{RAW_BASE}ec.m3u"
+        lines = download_content(url)
+        for line in lines:
+            if line.strip().upper() == "#EXTM3U":
+                continue
+            if line.startswith("#EXTINF:"):
+                if 'group-title=' in line:
+                    line = re.sub(r'group-title="[^"]*"', 'group-title="Ecuador"', line)
+                else:
+                    parts = line.split(",", 1)
+                    if len(parts) == 2:
+                        line = f'{parts[0]} group-title="Ecuador",{parts[1]}'
+            ec_lines.append(line)
+        process_playlist(ec_lines, "ecuador.m3u")
+    except Exception as e:
+        print(f"Error procesando Ecuador: {e}")
 
 if __name__ == "__main__":
-    for filename, url in PLAYLISTS.items():
-        clean_m3u(url, filename)
+    main()
