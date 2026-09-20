@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="Curiquingue Tv" group-title="Ecuador",Teleamazonas (Mi Link VIP)
+#EXTINF:-1 tvg-id="Curiquingue Tv" group-title="Ecuador",Curiquinge TV (Mi Link VIP)
 https://stream.ovalcast.com:5443/LiveApp/streams/wIZDyk6GTPuIpifQ868504716815490.m3u8
 #EXTINF:-1 tvg-id="5tv.ar@SD" group-title="Argentina",5tv
 https://617c5175c970b.streamlock.net:4444/tvcinco/live1/playlist.m3u8
