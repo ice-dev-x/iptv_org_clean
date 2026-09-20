@@ -21,6 +21,9 @@ MIS_CANALES_PROPIOS = """
 #EXTINF:-1 tvg-id="Curiquingue Tv" group-title="Ecuador",Curiquinge TV (Mi Link VIP)
 https://stream.ovalcast.com:5443/LiveApp/streams/wIZDyk6GTPuIpifQ868504716815490.m3u8
 
+#EXTINF:-1 tvg-id="Ecuavisa.ec" group-title="Ecuador",Ecuavisa HD
+#EXTVLCOPT:http-referrer=https://www.ecuavisa.com/
+https://rudo.video/live/ecuavisa?dXNlcj0xOTE1MDk=
 
 """
 
