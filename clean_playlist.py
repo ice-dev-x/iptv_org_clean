@@ -12,7 +12,7 @@ def clean_m3u(source_url: str, output_path: str):
         content = response.read().decode("utf-8")
 
     lines = content.splitlines()
-    seen_ids = set()
+    seen_ids = {}
     processed_lines = []
 
     for line in lines:
@@ -20,10 +20,13 @@ def clean_m3u(source_url: str, output_path: str):
             match = re.search(r'tvg-id="([^"]+)"', line)
             if match:
                 tvg_id = match.group(1)
-                if tvg_id in seen_ids:
-                    line = re.sub(r'tvg-id="[^"]+"', 'tvg-id=""', line)
-                elif tvg_id:
-                    seen_ids.add(tvg_id)
+                if tvg_id:
+                    if tvg_id in seen_ids:
+                        seen_ids[tvg_id] += 1
+                        new_id = f'{tvg_id}_{seen_ids[tvg_id]}'
+                        line = re.sub(r'tvg-id="[^"]+"', f'tvg-id="{new_id}"', line)
+                    else:
+                        seen_ids[tvg_id] = 1
         processed_lines.append(line)
 
     with open(output_path, "w", encoding="utf-8") as f:
