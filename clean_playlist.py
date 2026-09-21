@@ -22,14 +22,12 @@ MIS_CANALES_PROPIOS = """
 https://stream.ovalcast.com:5443/LiveApp/streams/wIZDyk6GTPuIpifQ868504716815490.m3u8
 
 
-#EXTINF:-1 tvg-id="RTU.ec" group-title="Ecuador",RTU (TV)
+#EXTINF:-1 tvg-id="RTU.ec" group-title="Ecuador",RTU
 #EXTVLCOPT:http-referrer=https://canalrtu.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://video1.makrodigital.com/rtu/rtu/playlist.m3u8
 
-#EXTINF:-1 tvg-id="RTU.ec" group-title="Ecuador",RTU (Móvil)
-#EXTHTTP:{"referer":"https://canalrtu.tv/","user-agent":"Mozilla/5.0"}
-https://video1.makrodigital.com/rtu/rtu/playlist.m3u8
+
 """
 
 def get_custom_lines():
