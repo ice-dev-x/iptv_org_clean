@@ -23,8 +23,9 @@ https://stream.ovalcast.com:5443/LiveApp/streams/wIZDyk6GTPuIpifQ868504716815490
 
 
 #EXTINF:-1 tvg-id="RTU.ec" group-title="Ecuador",RTU
-https://video1.makrodigital.com/rtu/rtu/playlist.m3u8|Referer=https://canalrtu.tv/&User-Agent=Mozilla/5.0
-
+#EXTVLCOPT:http-referrer=https://canalrtu.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://video1.makrodigital.com/rtu/rtu/playlist.m3u8
 """
 
 def get_custom_lines():
