@@ -426,6 +426,10 @@ https://canal11saltatv.unpocodeawita.workers.dev/
 https://tv.streamcasthd.com:3031/live/neoxtvlive.m3u8
 #EXTINF:-1 tvg-id="NorteTV.ar@SD" group-title="Argentina",Norte TV (720p) [Not 24/7]
 https://ntvcanal7.com.ar:81/dash/stream.mpd
+#EXTINF:-1 tvg-id="PlimPlim.ar@SD" group-title="Argentina",Plim Plim
+https://xyktmobile00.s.gy/PPV911_CANCION_BEBE
+#EXTINF:-1 tvg-id="Pakapaka.ar@SD" group-title="Argentina",Pakapaka
+https://xyktmobile00.s.gy/PPV910_PAKAKA_ARG
 #EXTINF:-1 tvg-id="AbyaYalaTV.bo@SD" group-title="Bolivia",Abya Yala TV (720p)
 http://15.204.246.24:8080/AbyaYalaTvHD/index.m3u8
 #EXTINF:-1 tvg-id="AbyaYalaTV.bo@SD_2" group-title="Bolivia",Abya Yala TV
@@ -2443,6 +2447,14 @@ http://138.121.15.230:9002/ZOOM/index.m3u8
 http://138.121.15.230:9002/SENAL-COLOMBIA/index.m3u8
 #EXTINF:-1 tvg-id="Teleantioquia.co@SD_2" group-title="Colombia",Teleantioquia (1080p)
 http://138.121.15.230:9002/TELEANTIOQUIA/index.m3u8
+#EXTINF:-1 tvg-id="CaracolTV.co@SD_4" group-title="Colombia",Caracol TV
+http://181.79.86.130:8000/play/a077/index.m3u8
+#EXTINF:-1 tvg-id="CaracolTV.co@SD_5" group-title="Colombia",Caracol TV (576p)
+http://181.79.86.130:8000/play/a04w/index.m3u8
+#EXTINF:-1 tvg-id="Telepacifico.co@SD_2" group-title="Colombia",Telepacifico (1080p)
+http://138.121.15.230:9002/TELEPACIFICO/index.m3u8
+#EXTINF:-1 tvg-id="CaracolInternacional.co@SD" group-title="Colombia",Caracol Internacional (576p)
+http://138.59.177.78:9999/play/a0a8/index.m3u8
 #EXTINF:-1 tvg-id="88Stereo.cr@SD" group-title="Costa Rica",88 Stereo (720p) [Not 24/7]
 http://k3.usastreams.com/CableLatino/88stereo/playlist.m3u8
 #EXTINF:-1 tvg-id="360RFTV.cr@SD" group-title="Costa Rica",360 RFTV (576p) [Geo-blocked]
@@ -4120,6 +4132,12 @@ https://xyktmobile00.s.gy/PPV903_CANAL_5
 https://xyktmobile00.s.gy/PPV905_CINE_LATINO
 #EXTINF:-1 tvg-id="GoldenPremier.mx@SD" group-title="México",Golden Premier
 https://xyktmobile00.s.gy/PPV902_GOLDENP1_HD
+#EXTINF:-1 tvg-id="bitMeLatinAmerica.mx@SD_2" group-title="México",bitMe Latin America
+https://xyktmobile00.s.gy/PPV913_BITM_JUE
+#EXTINF:-1 tvg-id="CineLatino.mx@SD_3" group-title="México",CineLatino (720p) (Opcion 2)
+http://206.135.11.174:8010/play/a0lq/index.m3u8
+#EXTINF:-1 tvg-id="CineLatino.mx@SD_4" group-title="México",CineLatino (576p)
+http://200.115.96.61:9090/play/a0i5/index.m3u8
 #EXTINF:-1 tvg-id="Canal6.ni@SD" group-title="Nicaragua",Canal 6 Nicaragüense (480p) [Not 24/7]
 http://138.117.4.70:8075/Canal06_CooTel/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7Boaco.ni@SD" group-title="Nicaragua",Canal 7 Boaco (1080p) [Not 24/7]
@@ -7677,3 +7695,5 @@ https://vodcdn.bamboo-cloud.com/livehls/6a9f89be0630445532152563/master.m3u8
 https://vodcdn.bamboo-cloud.com/livehls/6a9f8b4606304461c50dfe93/master.m3u8
 #EXTINF:-1 tvg-id="SKPop.us@HD" group-title="Estados Unidos",S KPop! (480p)
 https://vodcdn.bamboo-cloud.com/livehls/6aac8803063044569e156563/master.m3u8
+#EXTINF:-1 tvg-id="WeTV.us@East_2" group-title="Estados Unidos",We TV (1080p)
+http://23.237.104.106:8080/USA_WE_TV/index.m3u8
