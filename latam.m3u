@@ -436,6 +436,16 @@ http://200.115.120.1:8000/play/ca091/index.m3u8
 http://200.115.120.1:8000/play/ca016/index.m3u8
 #EXTINF:-1 tvg-id="ElTreceInternacionalLatinAmerica.ar@SD" group-title="Argentina",El Trece Internacional Latin America (1080p)
 http://200.7.99.59:8000/play/a0gm/index.m3u8
+#EXTINF:-1 tvg-id="PlimPlim.ar@SD_3" group-title="Argentina",Plim Plim (1080p) (Opcion 2)
+http://45.70.168.162:1503/play/a02a/index.m3u8
+#EXTINF:-1 tvg-id="TyCSports.ar@SD_5" group-title="Argentina",TyC Sports (1080p) (Opcion 3)
+http://168.228.44.241:9999/play/a02e/index.m3u8
+#EXTINF:-1 tvg-id="EuropaEuropa.ar@SD_3" group-title="Argentina",Europa Europa (1080p) (Opcion 3)
+http://38.252.238.18:8000/play/a01d/index.m3u8
+#EXTINF:-1 tvg-id="ElTreceInternacionalLatinAmerica.ar@SD_2" group-title="Argentina",El Trece Internacional Latin America (1080p) (Opcion 2)
+http://190.60.55.141:9083/play/a0ph/index.m3u8
+#EXTINF:-1 tvg-id="TelefeInternacional.ar@SD_3" group-title="Argentina",Telefe Internacional (1080p) (Opcion 2)
+http://190.60.55.141:9083/play/a0pb/index.m3u8
 #EXTINF:-1 tvg-id="AbyaYalaTV.bo@SD" group-title="Bolivia",Abya Yala TV (720p)
 http://15.204.246.24:8080/AbyaYalaTvHD/index.m3u8
 #EXTINF:-1 tvg-id="AbyaYalaTV.bo@SD_2" group-title="Bolivia",Abya Yala TV
@@ -661,6 +671,8 @@ http://15.204.246.24:8080/RedUnoLPZHD/index.m3u8
 http://15.204.246.24:8080/RTPSD/index.m3u8
 #EXTINF:-1 tvg-id="BoliviaTV.bo@SD" group-title="Bolivia",Bolivia TV (720p) [Not 24/7]
 https://hls.tvabierta.net/hls/boliviatv.m3u8
+#EXTINF:-1 tvg-id="BoliviaTV.bo@SD_2" group-title="Bolivia",Bolivia TV (1080p)
+http://190.181.61.93:8000/play/a001/index.m3u8
 #EXTINF:-1 tvg-id="1001Noites.br@SD" group-title="Brasil",1001 Noites (720p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8
 #EXTINF:-1 tvg-id="AdessoTV.br@SD" group-title="Brasil",Adesso TV (720p)
@@ -1577,6 +1589,8 @@ https://stmv2.srvif.com/gafeab/gafeab/playlist.m3u8
 https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeGlobo.br@SD_2" group-title="Brasil",Rede Globo (1080p)
 https://cdn-sp2.satlabscloud.com.br/RBS_HD/index.m3u8?token=Mw3YKkujzIi9hYQJ6kAQjQvly2VdBNuGPjHOq
+#EXTINF:-1 tvg-id="GloboplayNovelas.br@SD_2" group-title="Brasil",Globoplay Novelas (1080p) (Opcion 2)
+http://79.127.238.228:14455
 #EXTINF:-1 tvg-id="13C.cl@SD" group-title="Chile",13C (1080p)
 https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8
 #EXTINF:-1 tvg-id="13E.cl@SD" group-title="Chile",13 Entretención (720p)
@@ -2185,6 +2199,12 @@ http://190.234.82.52:8000/play/a0lz/index.m3u8
 http://168.196.127.137:6001/play/a03n/index.m3u8
 #EXTINF:-1 tvg-id="CanalClaro.cl@SD_2" group-title="Chile",Canal Claro (720p)
 http://168.196.127.137:6001/play/a04l/index.m3u8
+#EXTINF:-1 tvg-id="TVChile.cl@SD_4" group-title="Chile",TV Chile (576p)
+http://38.252.238.18:8000/play/a04b/index.m3u8
+#EXTINF:-1 tvg-id="24Horas.cl@SD_2" group-title="Chile",24 Horas (1080p) (Opcion 2)
+http://187.102.208.209:8000/play/a0a1/index.m3u8
+#EXTINF:-1 tvg-id="Canal13.cl@SD_8" group-title="Chile",Canal 13 (1080p) (Opcion 6)
+http://187.102.208.209:8000/play/a099/index.m3u8
 #EXTINF:-1 tvg-id="AlertaBogota.co@SD" group-title="Colombia",Alerta Bogota (720p) [Geo-blocked]
 https://mdstrm.com/live-stream-playlist/69b2cdf98815b9b6c48c2532.m3u8
 #EXTINF:-1 tvg-id="AmagaTelevision.co@SD" group-title="Colombia",Amaga Television (720p)
@@ -2278,10 +2298,8 @@ https://stmv4.voxtvhd.com.br/canicatv/canicatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CaracolHD2.co@SD" group-title="Colombia",Caracol HD2 (1080p)
 http://181.78.14.26:4000/play/a00d/index.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co@SD" group-title="Colombia",Caracol TV (1080p)
-http://45.171.108.253:8888/CARACOL/index.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD_2" group-title="Colombia",Caracol TV (1080p) (Opcion 2)
 http://138.121.15.230:9002/CARACOL/index.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD_3" group-title="Colombia",Caracol TV (1080p) (Opcion 3)
+#EXTINF:-1 tvg-id="CaracolTV.co@SD_2" group-title="Colombia",Caracol TV (1080p) (Opcion 2)
 http://181.78.17.228:8081/CARACOL-HD/index.m3u8
 #EXTINF:-1 tvg-id="CitytvBogota.co@SD" group-title="Colombia",Citytv Bogota (1080p)
 http://138.121.15.230:9002/CITY-TV/index.m3u8
@@ -2467,9 +2485,9 @@ http://138.121.15.230:9002/ZOOM/index.m3u8
 http://138.121.15.230:9002/SENAL-COLOMBIA/index.m3u8
 #EXTINF:-1 tvg-id="Teleantioquia.co@SD_2" group-title="Colombia",Teleantioquia (1080p)
 http://138.121.15.230:9002/TELEANTIOQUIA/index.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD_4" group-title="Colombia",Caracol TV
+#EXTINF:-1 tvg-id="CaracolTV.co@SD_3" group-title="Colombia",Caracol TV
 http://181.79.86.130:8000/play/a077/index.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD_5" group-title="Colombia",Caracol TV (576p)
+#EXTINF:-1 tvg-id="CaracolTV.co@SD_4" group-title="Colombia",Caracol TV (576p)
 http://181.79.86.130:8000/play/a04w/index.m3u8
 #EXTINF:-1 tvg-id="Telepacifico.co@SD_2" group-title="Colombia",Telepacifico (1080p)
 http://138.121.15.230:9002/TELEPACIFICO/index.m3u8
@@ -2505,7 +2523,7 @@ http://38.134.250.110:8000/play/a013/index.m3u8
 http://38.134.250.110:8000/play/a01q/index.m3u8
 #EXTINF:-1 tvg-id="CitytvBogota.co@SD_2" group-title="Colombia",Citytv Bogota (1080p) (Opcion 2)
 http://190.61.47.54:8000/play/a03l/index.m3u8
-#EXTINF:-1 tvg-id="CaracolTV.co@SD_6" group-title="Colombia",Caracol TV (1080p) (Opcion 4)
+#EXTINF:-1 tvg-id="CaracolTV.co@SD_5" group-title="Colombia",Caracol TV (1080p) (Opcion 3)
 http://190.61.47.54:8000/play/a01e/index.m3u8
 #EXTINF:-1 tvg-id="CanalInstitucional.co@SD_3" group-title="Colombia",Canal Institucional (1080p)
 http://190.61.47.54:8000/play/a00v/index.m3u8
@@ -2517,6 +2535,28 @@ https://xyktmobile00.s.gy/PPV937_NUESTRA_TELE
 http://168.196.127.137:6001/play/a09m/index.m3u8
 #EXTINF:-1 tvg-id="CitytvBogota.co@SD_3" group-title="Colombia",Citytv Bogota (1080p) (Opcion 3)
 http://168.228.44.241:9999/play/a04v/index.m3u8
+#EXTINF:-1 tvg-id="CanalTRO.co@SD_2" group-title="Colombia",Canal TRO (1080p) (Opcion 2)
+http://190.61.47.54:8000/play/a013/index.m3u8
+#EXTINF:-1 tvg-id="CanalTRO.co@SD_3" group-title="Colombia",Canal TRO (1080p) (Opcion 3)
+http://181.78.211.244:8005/play/a08c/index.m3u8
+#EXTINF:-1 tvg-id="Trece.co@SD_2" group-title="Colombia",Trece (1080p)
+http://190.60.46.228:8888/play/a030/index.m3u8
+#EXTINF:-1 tvg-id="StarChannel.co@SD" group-title="Colombia",Star Channel (1080p)
+http://190.61.47.54:8000/play/a035/index.m3u8
+#EXTINF:-1 tvg-id="Teleislas.co@SD_2" group-title="Colombia",Teleislas (720p)
+http://190.61.47.54:8000/play/a015/index.m3u8
+#EXTINF:-1 tvg-id="Teleislas.co@SD_3" group-title="Colombia",Teleislas (576p)
+http://181.78.211.244:8005/play/a08d/index.m3u8
+#EXTINF:-1 tvg-id="Canal1.co@SD_3" group-title="Colombia",Canal 1 (720p)
+http://38.134.250.110:8000/play/a014/index.m3u8
+#EXTINF:-1 tvg-id="Canal1.co@SD_4" group-title="Colombia",Canal 1 (720p) (Opcion 2)
+http://190.61.47.54:8000/play/a00u/index.m3u8
+#EXTINF:-1 tvg-id="CanalCapital.co@SD_3" group-title="Colombia",Canal Capital (720p)
+http://190.61.47.54:8000/play/a00x/index.m3u8
+#EXTINF:-1 tvg-id="CanalRCN.co@SD_4" group-title="Colombia",Canal RCN (1080p) (Opcion 4)
+http://190.61.47.54:8000/play/a01f/index.m3u8
+#EXTINF:-1 tvg-id="NuestraTeleInternacional.co@SD_3" group-title="Colombia",Nuestra Tele Internacional (720p) (Opcion 2)
+http://190.60.55.141:9083/play/a0hg/index.m3u8
 #EXTINF:-1 tvg-id="88Stereo.cr@SD" group-title="Costa Rica",88 Stereo (720p) [Not 24/7]
 http://k3.usastreams.com/CableLatino/88stereo/playlist.m3u8
 #EXTINF:-1 tvg-id="360RFTV.cr@SD" group-title="Costa Rica",360 RFTV (576p) [Geo-blocked]
@@ -2712,6 +2752,8 @@ http://45.5.117.188:8000/play/a02w/index.m3u8
 https://tiquiciatv.com/hls/lstv.m3u8
 #EXTINF:-1 tvg-id="Enlace.cr@SD_3" group-title="Costa Rica",Enlace (1080p)
 http://138.121.15.230:9002/ENLACE/index.m3u8
+#EXTINF:-1 tvg-id="Enlace.cr@SD_4" group-title="Costa Rica",Enlace (720p) (Opcion 2)
+http://187.102.208.209:8000/play/a0ae/index.m3u8
 #EXTINF:-1 tvg-id="PrensaLatinaTV.cu@SD" group-title="Cuba",Prensa Latina TV (1080p)
 https://eu1.servers10.com:8081/8192/index.m3u8
 #EXTINF:-1 tvg-id="RadioyTelevisionMarti.us@SD" group-title="Cuba",Radio y Televisión Martí (720p)
@@ -3482,6 +3524,10 @@ https://7.innovatestream.pe:19360/ecuadortest/ecuadortest.m3u8
 https://video2.makrodigital.com/zaracay/zaracay/playlist.m3u8
 #EXTINF:-1 tvg-id="StudioPlusTV.ec@HD" group-title="Ecuador",Studio + TV (1080p)
 https://vd01.streaminghd.net.ar:3113/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="EcuadorTV.ec@SD_3" group-title="Ecuador",Ecuador TV (720p)
+http://38.44.109.41:8003/play/a0e9/index.m3u8
+#EXTINF:-1 tvg-id="Gamavision.ec@SD_3" group-title="Ecuador",Gamavision (1080p) (Opcion 2)
+http://181.78.211.244:8000/play/a0a2/index.m3u8
 #EXTINF:-1 tvg-id="AgapeTV.sv@SD" group-title="El Salvador",Agape TV (720p)
 https://5fc584f3f19c9.streamlock.net/agape/smil:agape.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArboldeVidaTV.sv@SD" group-title="El Salvador",Árbol de Vida TV (240p) [Not 24/7]
@@ -3579,6 +3625,12 @@ https://service.cdn-stream.com/wow/wow_tv/playlist.m3u8
 http://45.167.1.138:8000/play/a02b
 #EXTINF:-1 tvg-id="Canal4.sv@SD_2" group-title="El Salvador",Canal 4 (1080p) (Opcion 2)
 http://168.228.44.241:9999/play/a042/index.m3u8
+#EXTINF:-1 tvg-id="ElimTV.sv@SD_2" group-title="El Salvador",Elim TV (576p)
+http://38.252.238.18:8000/play/a01k/index.m3u8
+#EXTINF:-1 tvg-id="MizpaTV.sv@SD" group-title="El Salvador",Mizpa TV (1080p)
+http://45.167.2.101:8000/play/a0r7/index.m3u8
+#EXTINF:-1 tvg-id="Canal9LaUnion.sv@SD" group-title="El Salvador",Canal 9 La Union (1080p)
+http://45.167.2.101:8000/play/a0r5/index.m3u8
 #EXTINF:-1 tvg-id="AmigosTVChiquimula.gt@SD" group-title="Guatemala",Amigos TV Chiquimula (480p)
 https://antmedia.cablevisionrobles.com:5443/LiveApp/streams/CqwAgRagMvBNYN8c1731608980342.m3u8
 #EXTINF:-1 tvg-id="BDTelevision.gt@SD" group-title="Guatemala",BD Televisión (720p)
@@ -3698,6 +3750,8 @@ http://200.115.120.1:8000/play/ca112/index.m3u8
 http://168.228.44.241:9999/play/a01m/index.m3u8
 #EXTINF:-1 tvg-id="Guatevision.gt@SD_3" group-title="Guatemala",Guatevision (720p) (Opcion 2)
 http://168.196.127.137:6001/play/a04m/index.m3u8
+#EXTINF:-1 tvg-id="Canal13.gt@SD_2" group-title="Guatemala",Canal 13 (720p) (Opcion 3)
+http://168.196.127.137:6001/play/a064/index.m3u8
 #EXTINF:-1 tvg-id="AlfaOmegaVision.hn@SD" group-title="Honduras",Alfa & Omega Vision (480p) [Not 24/7]
 https://srv.panelcast.net/dorian/dorian/playlist.m3u8
 #EXTINF:-1 tvg-id="AlsaciasTelevision.hn@SD" group-title="Honduras",Alsacias Televisión (ATV | Canal 28) (720p)
@@ -3872,6 +3926,8 @@ https://media.streambrothers.com:19360/8308/8308.m3u8
 http://186.33.26.18:8000/play/a0s4/index.m3u8
 #EXTINF:-1 tvg-id="DeportesTVC.hn@SD_3" group-title="Honduras",Deportes TVC (720p)
 http://190.61.101.11:7050/play/a06t/index.m3u8
+#EXTINF:-1 tvg-id="PicosaTV.hn@SD" group-title="Honduras",Picosa TV (720p)
+http://45.167.2.101:8000/play/a0sd/index.m3u8
 #EXTINF:-1 tvg-id="8NTV.mx@SD" group-title="México",8NTV (1080p)
 https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8
 #EXTINF:-1 tvg-id="15TV.mx@SD" group-title="México",15TV (720p) [Not 24/7]
@@ -4260,6 +4316,28 @@ http://168.196.127.137:6001/play/a08o/index.m3u8
 http://168.196.127.137:6001/play/a08n/index.m3u8
 #EXTINF:-1 tvg-id="DePeliculaPlus.mx@SD" group-title="México",De Pelicula Plus (1080p)
 http://200.115.120.1:8000/play/ca030/index.m3u8
+#EXTINF:-1 tvg-id="AyMSports.mx@SD" group-title="México",AyM Sports (1080p)
+http://168.196.127.137:6001/play/a06v/index.m3u8
+#EXTINF:-1 tvg-id="MC.mx@SD" group-title="México",MC (1080p)
+http://168.196.127.137:6001/play/a070/index.m3u8
+#EXTINF:-1 tvg-id="AzClic.mx@SD" group-title="México",Az Clic (1080p)
+http://38.252.238.18:8000/play/a01g/index.m3u8
+#EXTINF:-1 tvg-id="PXSports.mx@SD" group-title="México",PX Sports (1080p)
+http://38.252.238.18:8000/play/a02f/index.m3u8
+#EXTINF:-1 tvg-id="LasEstrellasLatinAmerica.mx@SD_4" group-title="México",Las Estrellas Latin America (1080p) (Opcion 4)
+http://38.44.109.41:8003/play/a0he
+#EXTINF:-1 tvg-id="TUDN.mx@SD_2" group-title="México",TUDN (576p)
+http://45.5.118.152:8000/play/a08n/index.m3u8
+#EXTINF:-1 tvg-id="Canal5.mx@XETTDT" group-title="México",Canal 5 XET-TDT (1080p)
+http://45.5.118.152:8000/play/a03i/index.m3u8
+#EXTINF:-1 tvg-id="GoldenPlus.mx@SD" group-title="México",Golden Plus (1080p)
+http://45.5.118.152:8000/play/a03p/index.m3u8
+#EXTINF:-1 tvg-id="MC.mx@SD_2" group-title="México",MC (720p)
+http://45.5.118.152:8000/play/a03r/index.m3u8
+#EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx@SD_6" group-title="México",De Pelicula Latin America (1080p) (Opcion 4)
+http://190.60.55.141:9083/play/a0nf/index.m3u8
+#EXTINF:-1 tvg-id="LasEstrellasLatinAmerica.mx@SD_5" group-title="México",Las Estrellas Latin America (1080p) (Opcion 5)
+http://190.60.55.141:9083/play/a0np/index.m3u8
 #EXTINF:-1 tvg-id="Canal6.ni@SD" group-title="Nicaragua",Canal 6 Nicaragüense (480p) [Not 24/7]
 http://138.117.4.70:8075/Canal06_CooTel/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7Boaco.ni@SD" group-title="Nicaragua",Canal 7 Boaco (1080p) [Not 24/7]
@@ -4497,6 +4575,8 @@ https://stmv7.voxtvhd.com.br/xxvideo/xxvideo/playlist.m3u8
 http://45.170.130.224:8000/play/a04k/index.m3u8?hls
 #EXTINF:-1 tvg-id="ParaguayTV.py@SD" group-title="Paraguay",Paraguay TV (1080p)
 https://stream.paraguaytv.gov.py/memfs/bbe36fed-9b49-4d1d-adaa-4bd6d1b2e386.m3u8
+#EXTINF:-1 tvg-id="ABCTVParaguay.py@SD" group-title="Paraguay",ABC-TV Paraguay (1080p)
+https://live2.eu-north-1a.cf.dmcdn.net/sec2(vig4KUMvzIpvL_0CGgNPG2QFE6DukpwGhRZzGj8aqOyedNaDjlOwv-qe03N1Bk5-7nB-V7Uv8gBwwy2h-0TCL_WRE6IWeUWiVcnYm587YcdKpnqvQZ3tYg9iGdqpySyX)/cloud/3/x9skr3m/d/live-720.m3u8#cell=lcf2-eu-north-1a
 #EXTINF:-1 tvg-id="36TVHuacho.pe@SD" group-title="Perú",36 TV Huacho (720p)
 https://live-evg10.tv360.bitel.com.pe/bitel/36tvSRT/playlist.m3u8
 #EXTINF:-1 tvg-id="ABCTeleshow.pe@SD" group-title="Perú",ABC Teleshow (720p)
@@ -5033,6 +5113,10 @@ https://xyktmobile00.s.gy/PPV909_AMERICA_PERU
 http://181.224.200.5:2277/play/a0dx/index.m3u8
 #EXTINF:-1 tvg-id="PanamericanaTV.pe@SD_4" group-title="Perú",Panamericana TV (1080p) (Opcion 4)
 http://181.224.200.5:2277/play/kkio/index.m3u8
+#EXTINF:-1 tvg-id="CanalN.pe@SD_2" group-title="Perú",Canal N (1080p)
+http://187.102.208.209:8000/play/a0az/index.m3u8
+#EXTINF:-1 tvg-id="TVPeru.pe@SD_8" group-title="Perú",TV Peru (1080p) (Opcion 6)
+http://187.102.208.209:8000/play/a0ay/index.m3u8
 #EXTINF:-1 tvg-id="AmericaTeVe.pr@SD" group-title="Puerto Rico",América TeVé (1080p)
 https://live.gideo.video/americateve2/master.m3u8
 #EXTINF:-1 tvg-id="BuenaTV.pr@SD" group-title="Puerto Rico",Buena TV (1080p)
@@ -5098,6 +5182,8 @@ https://streamwipr.pr/hls/stream/1/index.m3u8
 #EXTINF:-1 tvg-id="WIPRTV61.pr@HD_3" group-title="Puerto Rico",WIPR-TV 6.1 (1080p) (Opcion 2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML; like Gecko) Chrome/149.0.0.0 Safari/537.36
 https://ott3.streann.com/loadbalancer/services/public/channels-secure/6273ffeae4b037870081ff51/playlist.m3u8
+#EXTINF:-1 tvg-id="WKAQTV22.pr@HD_2" group-title="Puerto Rico",WKAQ-TV 2.2 (1080p)
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master_720.m3u8
 #EXTINF:-1 tvg-id="Canal5.uy@SD" group-title="Uruguay",Canal 5 (720p)
 https://tinyurl.com/canal5uy
 #EXTINF:-1 tvg-id="UCL.uy@SD" group-title="Uruguay",UCL (720p)
@@ -5266,6 +5352,12 @@ http://190.61.114.186:8000/play/a03i/index.m3u8
 http://181.78.8.199:8000/play/a0fo/index.m3u8
 #EXTINF:-1 tvg-id="SunChannel.ve@SD" group-title="Venezuela",Sun Channel (720p)
 http://168.196.127.137:6001/play/a06p/index.m3u8
+#EXTINF:-1 tvg-id="Televen.ve@SD_2" group-title="Venezuela",Televen (1080p)
+http://38.134.250.110:8000/play/a02i/index.m3u8
+#EXTINF:-1 tvg-id="VePlus.ve@Venezuela" group-title="Venezuela",Ve Plus (720p)
+http://186.148.196.100:8000/play/a01d
+#EXTINF:-1 tvg-id="Telesur.ve@SD_3" group-title="Venezuela",Telesur (1080p)
+http://181.78.211.244:8005/play/a0cc/index.m3u8
 #EXTINF:-1 tvg-id="3CatCameresdeltemps.es@SD" group-title="España",3Cat Càmeres del temps (1080p)
 https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8
 #EXTINF:-1 tvg-id="3CatExclusiu1.es@SD" group-title="España",3Cat Exclusiu 1 (1080p) [Geo-blocked]
@@ -5870,6 +5962,10 @@ http://168.228.44.241:9999/play/a04j/index.m3u8
 #EXTINF:-1 tvg-id="TVEInternacionalEurope.es@SD_2" group-title="España",TVE Internacional Europe
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML; like Gecko) Chrome/120.0.0.0 Safari/537.36
 http://91.228.35.249:8001/1:0:1:DAD:1F40:13E:820000:0:0:0
+#EXTINF:-1 tvg-id="TVEStar.es@HD_3" group-title="España",TVE Star HD (1080p) (Opcion 3)
+http://38.252.238.18:8000/play/a01h/index.m3u8
+#EXTINF:-1 tvg-id="Antena3Internacional.es@SD_3" group-title="España",Antena 3 Internacional (1080p)
+http://38.252.238.18:8000/play/a04a/index.m3u8
 #EXTINF:-1 tvg-id="6WiseTv.us@SD" group-title="Estados Unidos",6 Wise Tv (720p)
 https://live.enhdtv.com:8081/8150/index.m3u8
 #EXTINF:-1 tvg-id="48Hours.us@US" group-title="Estados Unidos",48 Hours (1080p)
@@ -6833,8 +6929,6 @@ https://n1ottesorkatv.akamaized.net/hls/live/2113795/Live_1/index.m3u8
 https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/index.m3u8
 #EXTINF:-1 tvg-id="Newsy.us@SD" group-title="Estados Unidos",Newsy (1080p)
 https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/e3e6e29095844c4ba7d887f01e44a5ef/index.m3u8
-#EXTINF:-1 tvg-id="NFLNetwork.us@SD" group-title="Estados Unidos",NFL Network (720p)
-http://23.237.104.106:8080/USA_NFL_NETWORK/index.m3u8
 #EXTINF:-1 tvg-id="NickJr.us@East" group-title="Estados Unidos",Nick Jr. (720p)
 http://212.5.144.156:8080/nickjr/index.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.us@East" group-title="Estados Unidos",Nickelodeon (720p)
@@ -7304,8 +7398,6 @@ http://181.119.66.28:8081/Universal-HD/index.m3u8
 http://190.197.41.183/Univision/index.m3u8
 #EXTINF:-1 tvg-id="UnivisionTlnovelas.us@SD" group-title="Estados Unidos",Univision Tlnovelas (1080p)
 http://45.6.4.35/TELENOVELAS/index.m3u8
-#EXTINF:-1 tvg-id="USANetwork.us@East" group-title="Estados Unidos",USA Network (1080p)
-http://190.11.225.124:5000/live/usa_hd/playlist.m3u8
 #EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Panregional" group-title="Estados Unidos",USA Network Latin America (1080p)
 http://138.121.15.230:9002/USA/index.m3u8
 #EXTINF:-1 tvg-id="USANetworkLatinAmerica.us@Panregional_2" group-title="Estados Unidos",USA Network Latin America (1080p) (Opcion 2)
@@ -7509,8 +7601,6 @@ http://181.78.106.127:5000/play/a0sa/index.m3u8
 https://vodcdn.bamboo-cloud.com/livehls/6a81edf1063044437202e65c/master.m3u8
 #EXTINF:-1 tvg-id="ESPNDeportes.us@HD" group-title="Estados Unidos",ESPN Deportes HD (720p)
 http://168.228.44.241:9998/play/a0dz/index.m3u8
-#EXTINF:-1 tvg-id="StarzEdge.us@East" group-title="Estados Unidos",Starz Edge (720p)
-http://168.228.44.241:9998/play/a0e0/index.m3u8
 #EXTINF:-1 tvg-id="StarzEncoreSpanish.us@East" group-title="Estados Unidos",Starz Encore Spanish (720p)
 http://168.228.44.241:9998/play/a0e1/index.m3u8
 #EXTINF:-1 tvg-id="SPremium.us@HD" group-title="Estados Unidos",S Premium! (360p)
@@ -7527,8 +7617,6 @@ https://wggstv16.ddns.net:9953/hls/KMCT1.m3u8
 https://www.funroads-hls1.com/funroads.m3u8
 #EXTINF:-1 tvg-id="AlbanianTVAmerica.us@SD" group-title="Estados Unidos",Albanian TV America (1080p)
 http://5.254.89.106/8711/index.m3u8
-#EXTINF:-1 tvg-id="USANetwork.us@East_2" group-title="Estados Unidos",USA Network (576p)
-https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8
 #EXTINF:-1 tvg-id="ShopLC.us@SD_3" group-title="Estados Unidos",Shop LC (576p)
 https://tvsen3.aynaott.com/zZ6EndAn/index.m3u8
 #EXTINF:-1 tvg-id="AXSTV.us@SD_2" group-title="Estados Unidos",AXS TV (576p)
@@ -7667,8 +7755,6 @@ https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8
 https://vodcdn.bamboo-cloud.com/livehls/6a81c67306304414d27742d3/master.m3u8
 #EXTINF:-1 tvg-id="UniMas.us@WFUTDT_2" group-title="Estados Unidos",UniMas WFUT-DT (1080p)
 http://4.30.180.36:8420/wfutdt/mono.m3u8?token=test
-#EXTINF:-1 tvg-id="Showtime.us@East" group-title="Estados Unidos",Showtime (1080p)
-http://4.30.180.36:8420/showtime/mono.m3u8?token=test
 #EXTINF:-1 tvg-id="AXNBlack.us@Bulgary_2" group-title="Estados Unidos",AXN Black (576p)
 http://hls127.freeott.top:8080/BG_AXN_Black/video.m3u8
 #EXTINF:-1 tvg-id="AXNWhite.us@Bulgaria_2" group-title="Estados Unidos",AXN White Bulgaria (576p)
@@ -7687,16 +7773,8 @@ http://4.30.180.36:8420/wnethd/index.m3u8?token=test
 http://4.30.180.36:8420/nickjr/index.m3u8?token=test
 #EXTINF:-1 tvg-id="SYFY.us@East_3" group-title="Estados Unidos",SYFY (720p) (Opcion 3)
 http://4.30.180.36:8420/syfy/index.m3u8?token=test
-#EXTINF:-1 tvg-id="ParamountNetwork.us@East" group-title="Estados Unidos",Paramount Network (720p)
-http://4.30.180.36:8420/paramount/index.m3u8?token=test
-#EXTINF:-1 tvg-id="AMC.us@EastHD_3" group-title="Estados Unidos",AMC (720p) (Opcion 2)
-http://4.30.180.36:8420/amc/index.m3u8?token=test
 #EXTINF:-1 tvg-id="HallmarkChannel.us@East_3" group-title="Estados Unidos",Hallmark Channel (720p)
 http://4.30.180.36:8420/hallmark/index.m3u8?token=test
-#EXTINF:-1 tvg-id="USANetwork.us@East_3" group-title="Estados Unidos",USA Network (720p)
-http://4.30.180.36:8420/usa/index.m3u8?token=test
-#EXTINF:-1 tvg-id="VH1.us@East" group-title="Estados Unidos",VH1 (720p)
-http://4.30.180.36:8420/vh1/index.m3u8?token=test
 #EXTINF:-1 tvg-id="DisneyChannel.us@HDEast" group-title="Estados Unidos",Disney Channel HD East (720p)
 http://4.30.180.36:8420/disneychannel/index.m3u8?token=test
 #EXTINF:-1 tvg-id="CNBC.us@SD_2" group-title="Estados Unidos",CNBC (720p)
@@ -7743,8 +7821,6 @@ https://mumbai-edge.smartplaytv.in/Tennis2/index.m3u8
 https://mumbai-edge.smartplaytv.in/Bloomberg/index.m3u8
 #EXTINF:-1 tvg-id="BloombergTV.us@US_4" group-title="Estados Unidos",Bloomberg TV (576p)
 https://tvsen6.aynaott.com/bloombergtv/index.m3u8
-#EXTINF:-1 tvg-id="NFLNetwork.us@SD_2" group-title="Estados Unidos",NFL Network (576p) [Geo-blocked]
-https://tvsen6.aynaott.com/nfl/index.m3u8
 #EXTINF:-1 tvg-id="Willow.us@SD_4" group-title="Estados Unidos",Willow (720p) [Geo-blocked]
 https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8
 #EXTINF:-1 tvg-id="Galavision.us@West" group-title="Estados Unidos",Galavision West (720p)
@@ -7816,3 +7892,35 @@ http://168.196.127.137:6001/play/a09b/index.m3u8
 http://168.196.127.137:6001/play/a04y/index.m3u8
 #EXTINF:-1 tvg-id="BabyFirst.us@Spanish_4" group-title="Estados Unidos",BabyFirst Spanish (1080p)
 http://168.196.127.137:6001/play/a06j/index.m3u8
+#EXTINF:-1 tvg-id="Univision.us@East_3" group-title="Estados Unidos",Univision (1080p) (Opcion 2)
+http://38.252.238.18:8000/play/a03e/index.m3u8
+#EXTINF:-1 tvg-id="DHE.us@SD_5" group-title="Estados Unidos",DHE (1080p) (Opcion 5)
+http://38.252.238.18:8000/play/a01f/index.m3u8
+#EXTINF:-1 tvg-id="DSports.us@Panregional_3" group-title="Estados Unidos",DSports (1080p)
+http://38.187.7.252:8000/play/a03d/index.m3u8
+#EXTINF:-1 tvg-id="ESNETV.us@SD" group-title="Estados Unidos",ESNE TV (720p)
+http://168.196.127.137:6001/play/a071/index.m3u8
+#EXTINF:-1 tvg-id="HolaTVLatinAmerica.us@SD_3" group-title="Estados Unidos",Hola! TV Latin America (1080p) (Opcion 2)
+http://168.196.127.137:6001/play/a03q/index.m3u8
+#EXTINF:-1 tvg-id="AXNLatinAmerica.us@Andes" group-title="Estados Unidos",AXN Latin America Andes (1080p)
+http://181.78.8.199:8000/play/a0cu/index.m3u8
+#EXTINF:-1 tvg-id="SonyMoviesLatinAmerica.us@SD_4" group-title="Estados Unidos",Sony Movies Latin America (1080p)
+http://38.252.238.18:8000/play/a01e/index.m3u8
+#EXTINF:-1 tvg-id="FXLatinAmerica.us@Panregional_7" group-title="Estados Unidos",FX Latin America (1080p) (Opcion 6)
+http://38.252.238.18:8000/play/a01c/index.m3u8
+#EXTINF:-1 tvg-id="Cinecanal.us@Panregional_5" group-title="Estados Unidos",Cinecanal (1080p) (Opcion 5)
+http://190.61.47.54:8000/play/a02z/index.m3u8
+#EXTINF:-1 tvg-id="GolfChannelLatinAmerica.us@SD_4" group-title="Estados Unidos",Golf Channel Latin America (1080p) (Opcion 3)
+http://38.252.238.18:8000/play/a01i/index.m3u8
+#EXTINF:-1 tvg-id="SmithsonianChannelAsia.us@SD" group-title="Estados Unidos",Smithsonian Channel Asia [Geo-blocked]
+https://xyktmobile00.s.gy/PPV940_SMITHSONIAN
+#EXTINF:-1 tvg-id="Telemundo.us@West_3" group-title="Estados Unidos",Telemundo West
+https://xyktmobile00.s.gy/PPV943_CANAL27_ESAL
+#EXTINF:-1 tvg-id="NBATV.us@SD_2" group-title="Estados Unidos",NBA TV (720p) (Opcion 2)
+http://rezofoot.tv/NBATV/index.m3u8
+#EXTINF:-1 tvg-id="EWTN.us@SpainLatinAmerica_2" group-title="Estados Unidos",EWTN Spain & Latin America (576p)
+http://187.102.208.209:8000/play/a0ac/index.m3u8
+#EXTINF:-1 tvg-id="LifetimeLatinAmerica.us@Panregional_5" group-title="Estados Unidos",Lifetime Latin America (1080p) (Opcion 4)
+http://187.102.208.209:8000/play/a0ad/index.m3u8
+#EXTINF:-1 tvg-id="PasionesLatinAmerica.us@SD_6" group-title="Estados Unidos",Pasiones Latin America (1080p) (Opcion 6)
+http://190.60.55.141:9083/play/a0ni/index.m3u8
