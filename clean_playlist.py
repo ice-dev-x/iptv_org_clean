@@ -12,7 +12,8 @@ LATAM_COUNTRIES = {
     "pe": "Perú", "pr": "Puerto Rico", "uy": "Uruguay", "ve": "Venezuela",
     "es": "España",
     "us": "Estados Unidos",
-    "pt": "Portugal"
+    "pt": "Portugal",
+    "it": "Italia"
 }
 
 # 2. TUS ENLACES PERSONALIZADOS
