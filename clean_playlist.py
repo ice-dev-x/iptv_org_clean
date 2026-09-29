@@ -18,6 +18,12 @@ LATAM_COUNTRIES = {
 # Pega aquí tus enlaces funcionales usando el formato estándar M3U. 
 # Como se procesan primero, siempre serán la opción principal en tu reproductor.
 MIS_CANALES_PROPIOS = """
+#EXTINF:-1 tvg-id="America Tv" group-title="Argentina",America TV (Mi Link VIP)
+https://g5.vxral-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/playlist.m3u8?sense=true
+
+#EXTINF:-1 tvg-id="America Tv" group-title="Argentina",America TV (Mi Link VIP 2)
+https://dai.google.com/linear/hls/pa/event/OY2i_lL4SMyXE5Zaj4ULEg/stream/5f763e32-be81-494d-b90e-cce6f16c9f01:ATL/variant/085a2414a253631c90e7ac89ccc9f934/bandwidth/1031000.m3u8
+
 #EXTINF:-1 tvg-id="Curiquingue Tv" group-title="Ecuador",Curiquinge TV (Mi Link VIP)
 https://stream.ovalcast.com:5443/LiveApp/streams/wIZDyk6GTPuIpifQ868504716815490.m3u8
 
