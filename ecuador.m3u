@@ -9,7 +9,7 @@ http://146.19.49.197:81/live/loco_hi/index.m3u8
 http://190.61.101.11:7050/play/a09k/index.m3u8?hls
 #EXTINF:-1 tvg-id="Espn_2" tvg-name="Espn 2" group-title="24/7 y más (Experimental)",ESPN 2
 http://190.61.101.11:7050/play/a05c/index.m3u8?hls
-#EXTINF:-1 tvg-id="AmericaTV.ar@SD" tvg-name="America TV" http-user-agent="Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",America TV (720p)
+#EXTINF:-1 tvg-id="AmericaTV.ar@SD" tvg-name="America TV" http-user-agent="Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",America TV (VIP)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML; like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
 #EXTHTTP:{"http-user-agent":"Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"}
 https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
