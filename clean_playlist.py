@@ -5,12 +5,13 @@ RAW_BASE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/"
 
 # 1. LISTA DE PAÍSES (Aquí ya agregamos España y Estados Unidos)
 LATAM_COUNTRIES = {
+    "mx_pluto": "Pluto TV",
     "ar": "Argentina", "bo": "Bolivia", "br": "Brasil", "cl": "Chile", 
     "co": "Colombia", "cr": "Costa Rica", "cu": "Cuba", "do": "República Dominicana", 
     "ec": "Ecuador", "sv": "El Salvador", "gt": "Guatemala", "hn": "Honduras", 
     "mx": "México", "ni": "Nicaragua", "pa": "Panamá", "py": "Paraguay", 
     "pe": "Perú", "pr": "Puerto Rico", "uy": "Uruguay", "ve": "Venezuela",
-    "es": "España", "mx_pluto": "Pluto TV México",
+    "es": "España",
     "us": "Estados Unidos",
     "pt": "Portugal",
     "it": "Italia"
