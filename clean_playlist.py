@@ -22,17 +22,15 @@ LATAM_COUNTRIES = {
 # Como se procesan primero, siempre serán la opción principal en tu reproductor.
 MIS_CANALES_PROPIOS = """
 
-#EXTINF:-1 tvg-id="Curiquingue Tv" group-title="Ecuador",Curiquinge T#EXTINF:-1 tvg-id="America Tv" group-title="Argentina",America TV (Mi Link VIP)
-https://g5.vxral-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/playlist.m3u8?sense=true
+#EXTINF:-1 tvg-id="DragonBall_24/7_1" tvg-name="DB/Z" tvg-logo="https://www.vertvcable.com/wp-content/uploads/2026/07/dagonballz.jpg" group-title="24/7 y más (Experimental)",Dragon Ball/Z 24/7
+https://183.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8
+
+#EXTINF:-1 tvg-id="chavo_1" tvg-name="Chavo8" tvg-logo="" group-title="24/7 y más (Experimental)",Chavo 8 24/7  
+https://live20.bozztv.com/giatvplayout7/giatv-211465/playlist.m3u8
 
 
-
-#EXTINF:-1 tvg-id="RTU.ec" group-title="Ecuador",RTU
-#EXTVLCOPT:http-referrer=https://canalrtu.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://video1.makrodigital.com/rtu/rtu/playlist.m3u8
-
-
+#EXTINF:-1 tvg-id="Locomotion_1" tvg-name="locomotion" tvg-logo="https://ibb.co/8gBHbjMs" group-title="24/7 y más (Experimental)",Locomotion
+http://146.19.49.197:81/live/loco_hi/index.m3u8
 """
 
 def get_custom_lines():
