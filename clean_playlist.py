@@ -10,7 +10,7 @@ LATAM_COUNTRIES = {
     "ec": "Ecuador", "sv": "El Salvador", "gt": "Guatemala", "hn": "Honduras", 
     "mx": "México", "ni": "Nicaragua", "pa": "Panamá", "py": "Paraguay", 
     "pe": "Perú", "pr": "Puerto Rico", "uy": "Uruguay", "ve": "Venezuela",
-    "es": "España",
+    "es": "España", "mx_pluto": "Pluto TV México",
     "us": "Estados Unidos",
     "pt": "Portugal",
     "it": "Italia"
