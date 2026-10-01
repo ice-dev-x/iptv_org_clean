@@ -32,10 +32,13 @@ https://live20.bozztv.com/giatvplayout7/giatv-211465/playlist.m3u8
 #EXTINF:-1 tvg-id="Locomotion_1" tvg-name="locomotion" tvg-logo="https://ibb.co/8gBHbjMs" group-title="24/7 y más (Experimental)",Locomotion
 http://146.19.49.197:81/live/loco_hi/index.m3u8
 
-#EXTINF:-1 tvg-id="Espn_1" tvg-name="Espn" group-title="24/7 y más (Experimental)",ESPN
+#EXTINF:-1 tvg-id="magickids" tvg-name="Magic Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logomagic96.png" group-title="24/7 y más (Experimental)",Magic Kids
 http://190.61.101.11:7050/play/a09k/index.m3u8?hls
-#EXTINF:-1 tvg-id="Espn_2" tvg-name="Espn 2" group-title="24/7 y más (Experimental)",ESPN 2
-http://190.61.101.11:7050/play/a05c/index.m3u8?hls
+
+#EXTINF:-1 tvg-id="Espn" tvg-name="ESPN" tvg-logo="http://cdn.iconscout.com/icon/free/png-512/free-espn-logo-icon-svg-download-png-461787.png" group-title="24/7 y más (Experimental)",ESPN
+http://190.61.101.11:7050/play/a09k/index.m3u8?hls
+https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/espn-mux/playlist.m3u8
+
 
 
 
