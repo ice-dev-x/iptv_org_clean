@@ -3,9 +3,16 @@ import re
 
 RAW_BASE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/"
 
-# 1. LISTA DE PAÍSES (Aquí ya agregamos España y Estados Unidos)
+# URLs específicas para las listas actualizadas de Pluto TV
+PLUTO_URLS = {
+    "Pluto TV México": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_mx.m3u",
+    "Pluto TV Argentina": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_ar.m3u",
+    "Pluto TV España": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_es.m3u"
+}
+
+# 1. LISTA DE PAÍSES (Se omite mx_pluto antiguo ya que usamos el nuevo)
 LATAM_COUNTRIES = {
-    "mx_pluto": "Pluto TV",
+    
     "ar": "Argentina", "bo": "Bolivia", "br": "Brasil", "cl": "Chile", 
     "co": "Colombia", "cr": "Costa Rica", "cu": "Cuba", "do": "República Dominicana", 
     "ec": "Ecuador", "sv": "El Salvador", "gt": "Guatemala", "hn": "Honduras", 
@@ -46,21 +53,15 @@ http://146.19.49.197:81/live/loco_hi/index.m3u8
 #EXTINF:-1 tvg-id="magickids" tvg-name="Magic Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logomagic96.png" group-title="24/7 y más (Experimental)",Magic Kids
 https://kiiroilabs.ddns.net/magickids/stream/stream.m3u8
 
-
 #EXTINF:-1 tvg-id="Espn_1" tvg-name="ESPN" tvg-logo="http://cdn.iconscout.com/icon/free/png-512/free-espn-logo-icon-svg-download-png-461787.png" group-title="24/7 y más (Experimental)",ESPN
 http://190.61.101.11:7050/play/a09k/index.m3u8?hls
 
 #EXTINF:-1 tvg-id="Espn2" tvg-name="ESPN_2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png" group-title="24/7 y más (Experimental)",ESPN 2
 http://190.61.101.11:7050/play/a05c/index.m3u8?hls
 
-
-
-
-
 """
 
 def get_custom_lines():
-    # Extrae tus canales personalizados ignorando las líneas en blanco
     return [line.strip() for line in MIS_CANALES_PROPIOS.split('\n') if line.strip()]
 
 def download_content(url):
@@ -122,7 +123,25 @@ def main():
     # 1. INYECTAMOS TUS CANALES PROPIOS PRIMERO
     latam_lines.extend(get_custom_lines())
     
-    # 2. DESCARGAMOS EL RESTO DE PAÍSES
+    # 2. INYECTAMOS PLUTO TV ACTUALIZADO (MX, AR, ES)
+    for group_name, pluto_url in PLUTO_URLS.items():
+        try:
+            lines = download_content(pluto_url)
+            for line in lines:
+                if line.strip().upper() == "#EXTM3U":
+                    continue
+                if line.startswith("#EXTINF:"):
+                    if 'group-title=' in line:
+                        line = re.sub(r'group-title="[^"]*"', f'group-title="{group_name}"', line)
+                    else:
+                        parts = line.split(",", 1)
+                        if len(parts) == 2:
+                            line = f'{parts[0]} group-title="{group_name}",{parts[1]}'
+                latam_lines.append(line)
+        except Exception as e:
+            print(f"  -> Error con {group_name}: {e}")
+
+    # 3. DESCARGAMOS EL RESTO DE PAÍSES
     for country_code, country_name in LATAM_COUNTRIES.items():
         url = f"{RAW_BASE}{country_code}.m3u"
         try:
@@ -150,7 +169,6 @@ def main():
     print("--- PROCESANDO ECUADOR INDIVIDUAL ---")
     try:
         ec_lines = ["#EXTM3U"]
-        # INYECTAMOS TUS CANALES PROPIOS TAMBIÉN EN LA LISTA INDIVIDUAL
         ec_lines.extend(get_custom_lines())
         
         url = f"{RAW_BASE}ec.m3u"
