@@ -5,16 +5,18 @@ import hashlib
 import unicodedata
 import os
 
-# Tu nuevo logo por defecto en formato WebP
 DEFAULT_LOGO = "https://i.ibb.co/d4wr01bB/tv.webp"
 RAW_BASE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/"
 
-# Tus URLs exactas de Pluto TV
+# URLs de Pluto TV
 PLUTO_URLS = {
     "Pluto TV México": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_mx.m3u",
     "Pluto TV Argentina": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_ar.m3u",
     "Pluto TV España": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_es.m3u"
 }
+
+# Nueva URL de Samsung TV Plus
+SAMSUNG_URL = "https://raw.githubusercontent.com/BuddyChewChew/samsungtvplus/refs/heads/main/output/samsung_tvplus.m3u"
 
 LATAM_COUNTRIES = {
     "ar": "Argentina", "bo": "Bolivia", "br": "Brasil", "cl": "Chile", 
@@ -22,7 +24,7 @@ LATAM_COUNTRIES = {
     "ec": "Ecuador", "sv": "El Salvador", "gt": "Guatemala", "hn": "Honduras", 
     "mx": "México", "ni": "Nicaragua", "pa": "Panamá", "py": "Paraguay", 
     "pe": "Perú", "pr": "Puerto Rico", "uy": "Uruguay", "ve": "Venezuela",
-    "es": "España", "us": "Estados Unidos", "pt": "Portugal", "it": "Italia"
+    "es": "España", "us": "Estados Unidos"#, "pt": "Portugal", "it": "Italia"
 }
 
 def normalize_id(text):
@@ -53,8 +55,6 @@ def parse_m3u(lines, override_group=None):
             name = line.split(',')[-1].strip() or "Canal Desconocido"
             
             logo = logo_match.group(1) if logo_match else ""
-            
-            # Si el canal no tiene logo o está vacío, asigna tu imagen directamente
             if not logo or logo.strip() == "": 
                 logo = DEFAULT_LOGO
                 
@@ -100,17 +100,30 @@ def main():
     for group_name, url in PLUTO_URLS.items():
         agregar_items(parse_m3u(fetch_lines(url), override_group=group_name))
         
-    # 3. Leer Países
+    # 3. Leer Samsung TV Plus (Agrupado en una sola categoría)
+    agregar_items(parse_m3u(fetch_lines(SAMSUNG_URL), override_group="Samsung TV Plus"))
+        
+    # 4. Leer Países Latam
     for code, country_name in LATAM_COUNTRIES.items():
         url = f"{RAW_BASE}{code}.m3u"
         agregar_items(parse_m3u(fetch_lines(url), override_group=country_name))
         
     catalogo_final = list(todas_las_categorias.values())
     
+    # Guardamos el JSON para Kino
     with open("catalogo.json", "w", encoding="utf-8") as f:
         json.dump(catalogo_final, f, ensure_ascii=False, indent=2)
-        
-    print(f"\n[OK] catalogo.json generado con {len(catalogo_final)} categorías.")
+    print(f"\n[OK] catalogo.json generado para Kino.")
+
+    # Guardamos el M3U para tu celular
+    with open("latam.m3u", "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for categoria in catalogo_final:
+            grupo = categoria["title"]
+            for canal in categoria["items"]:
+                f.write(f'#EXTINF:-1 tvg-id="{canal["id"]}" tvg-logo="{canal["logo"]}" group-title="{grupo}",{canal["title"]}\n')
+                f.write(f'{canal["ref"]}\n')
+    print(f"[OK] latam.m3u generado para tu celular.")
 
 if __name__ == "__main__":
     main()
