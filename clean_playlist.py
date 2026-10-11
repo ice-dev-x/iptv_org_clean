@@ -60,9 +60,6 @@ http://190.61.101.11:7050/play/a09k/index.m3u8?hls
 http://190.61.101.11:7050/play/a05c/index.m3u8?hls
 
 
-#EXTINF:-1 tvg-id="pelis_1" tvg-name="Pelis" tvg-logo="" group-title="24/7 y más (Experimental)",Pelis por encargo
-https://s6-s1001604.97bf1.com/hls/iMAYSHfSv8CYHmcpupAkgxtNU7bH7fgG/index_1920x1080.m3u8?token=29844a3a32314078745df2c764a6fdf1-1791609167-170.239.206.241-9ea056ac82a204ac379b246cd5979dd4893e91e711e530f29026438c05bcebc9
- 
 """
 
 def get_custom_lines():
