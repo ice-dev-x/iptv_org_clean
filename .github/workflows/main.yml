@@ -1,4 +1,4 @@
-name: Auto Update M3U Playlists
+name: Auto Update JSON Catalog
 
 on:
   schedule:
@@ -25,6 +25,9 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add ecuador.m3u latam.m3u
-          # Solo hace commit si hay cambios reales en las listas
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update m3u playlists" && git push)
+          
+          # 1. Agregamos el archivo JSON generado en lugar de los M3U
+          git add catalogo.json
+          
+          # 2. Tu misma condición inteligente para subir solo si hay cambios
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update catalogo.json" && git push)

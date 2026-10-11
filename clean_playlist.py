@@ -1,193 +1,116 @@
 import urllib.request
 import re
+import json
+import hashlib
+import unicodedata
+import os
 
+# Tu nuevo logo por defecto en formato WebP
+DEFAULT_LOGO = "https://i.ibb.co/d4wr01bB/tv.webp"
 RAW_BASE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/"
 
-# URLs específicas para las listas actualizadas de Pluto TV
+# Tus URLs exactas de Pluto TV
 PLUTO_URLS = {
     "Pluto TV México": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_mx.m3u",
     "Pluto TV Argentina": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_ar.m3u",
     "Pluto TV España": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_es.m3u"
 }
 
-# 1. LISTA DE PAÍSES (Se omite mx_pluto antiguo ya que usamos el nuevo)
 LATAM_COUNTRIES = {
-    "mx_pluto": "Pluto TV",
     "ar": "Argentina", "bo": "Bolivia", "br": "Brasil", "cl": "Chile", 
     "co": "Colombia", "cr": "Costa Rica", "cu": "Cuba", "do": "República Dominicana", 
     "ec": "Ecuador", "sv": "El Salvador", "gt": "Guatemala", "hn": "Honduras", 
     "mx": "México", "ni": "Nicaragua", "pa": "Panamá", "py": "Paraguay", 
     "pe": "Perú", "pr": "Puerto Rico", "uy": "Uruguay", "ve": "Venezuela",
-    "es": "España",
-    "us": "Estados Unidos",
-    "pt": "Portugal",
-    "it": "Italia"
+    "es": "España", "us": "Estados Unidos", "pt": "Portugal", "it": "Italia"
 }
 
-# 2. TUS ENLACES PERSONALIZADOS
-# Pega aquí tus enlaces funcionales usando el formato estándar M3U. 
-# Como se procesan primero, siempre serán la opción principal en tu reproductor.
-MIS_CANALES_PROPIOS = """
+def normalize_id(text):
+    text = unicodedata.normalize('NFKD', text.lower()).encode('ASCII', 'ignore').decode('utf-8')
+    return re.sub(r'[^a-z0-9]', '-', text)
 
-#EXTINF:-1 tvg-id="DragonBall_24/7_1" tvg-name="DB/Z" tvg-logo="https://www.vertvcable.com/wp-content/uploads/2026/07/dagonballz.jpg" group-title="24/7 y más (Experimental)",Dragon Ball/DBZ 24/7
-https://183.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8
-
-#EXTINF:-1 tvg-id="simpsons_1" tvg-name="simpsons" tvg-logo="" group-title="24/7 y más (Experimental)",Los Simpsons 24/7
-https://live20.bozztv.com/akamaissh101/ssh101/simplat/playlist.m3u8
-
-#EXTINF:-1 tvg-id="simpsons_2" tvg-name="simpsons" tvg-logo="" group-title="24/7 y más (Experimental)",Los Simpsons 24/7 (Op.2)
-https://lbgo.bozztv.com/ssh101/ssh101/simptestnews/playlist.m3u8
-
-#EXTINF:-1 tvg-id="caricaturas_1" tvg-name="caricaturas" tvg-logo="" group-title="24/7 y más (Experimental)",Caricaturas 24/7
-https://lbgo.bozztv.com/ssh101/ssh101/tvwxfxxgo/playlist.m3u8
-
-#EXTINF:-1 tvg-id="chavo_1" tvg-name="Chavo8" tvg-logo="" group-title="24/7 y más (Experimental)",Chavo del 8 24/7  
-https://live20.bozztv.com/giatvplayout7/giatv-211465/playlist.m3u8
-
-#EXTINF:-1 tvg-id="chespirito_1" tvg-name="Chespirito" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/93/Chespirito_Cut_1617889980592.png" group-title="24/7 y más (Experimental)",Chespirito 24/7  
-https://live20.bozztv.com/giatvplayout7/giatv-211111/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Locomotion_1" tvg-name="locomotion" tvg-logo="https://ibb.co/8gBHbjMs" group-title="24/7 y más (Experimental)",Locomotion
-http://146.19.49.197:81/live/loco_hi/index.m3u8
-
-#EXTINF:-1 tvg-id="magickids" tvg-name="Magic Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logomagic96.png" group-title="24/7 y más (Experimental)",Magic Kids
-https://kiiroilabs.ddns.net/magickids/stream/stream.m3u8
-
-#EXTINF:-1 tvg-id="Espn_1" tvg-name="ESPN" tvg-logo="http://cdn.iconscout.com/icon/free/png-512/free-espn-logo-icon-svg-download-png-461787.png" group-title="24/7 y más (Experimental)",ESPN
-http://190.61.101.11:7050/play/a09k/index.m3u8?hls
-
-#EXTINF:-1 tvg-id="Espn2" tvg-name="ESPN_2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png" group-title="24/7 y más (Experimental)",ESPN 2
-http://190.61.101.11:7050/play/a05c/index.m3u8?hls
-
-
-"""
-
-def get_custom_lines():
-    return [line.strip() for line in MIS_CANALES_PROPIOS.split('\n') if line.strip()]
-
-def download_content(url):
-    print(f"Descargando {url} ...")
+def fetch_lines(url):
+    print(f"Descargando {url}...")
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    with urllib.request.urlopen(req) as response:
-        return response.read().decode('utf-8').splitlines()
+    try:
+        with urllib.request.urlopen(req) as response:
+            return response.read().decode('utf-8').splitlines()
+    except Exception as e:
+        print(f"  -> Error: {e}")
+        return []
 
-def process_playlist(lines, output_file):
-    seen_ids = {}
-    seen_names = {}
-    new_lines = []
+def parse_m3u(lines, override_group=None):
+    items = []
+    current_item = None
     
     for line in lines:
+        line = line.strip()
+        if not line: continue
+        
         if line.startswith("#EXTINF:"):
-            parts = line.split(",", 1)
-            if len(parts) == 2:
-                prefix = parts[0]
-                channel_name = parts[1].strip()
-                
-                # Garantizar tvg-id único
-                match_id = re.search(r'tvg-id="([^"]+)"', prefix)
-                if match_id:
-                    original_id = match_id.group(1)
-                    seen_ids[original_id] = seen_ids.get(original_id, 0) + 1
-                    if seen_ids[original_id] > 1:
-                        new_id = f"{original_id}_{seen_ids[original_id]}"
-                        prefix = re.sub(r'tvg-id="([^"]+)"', f'tvg-id="{new_id}"', prefix)
-
-                # Garantizar nombres únicos
-                seen_names[channel_name] = seen_names.get(channel_name, 0) + 1
-                if seen_names[channel_name] > 1:
-                    new_name = f"{channel_name} (Opcion {seen_names[channel_name]})"
-                else:
-                    new_name = channel_name
-                
-                new_line = f"{prefix},{new_name}"
-                new_lines.append(new_line)
-            else:
-                new_lines.append(line)
-                
-        # Solución para el bug de iMPlayer (reemplaza comas en el disfraz)
-        elif line.startswith("#EXTVLCOPT:"):
-            line_limpia = line.replace(",", ";")
-            new_lines.append(line_limpia)
-        else:
-            new_lines.append(line)
+            logo_match = re.search(r'tvg-logo="([^"]+)"', line)
+            group_match = re.search(r'group-title="([^"]+)"', line)
+            name = line.split(',')[-1].strip() or "Canal Desconocido"
             
-    with open(output_file, 'w', encoding='utf-8') as f:
-        for line in new_lines:
-            f.write(line + "\n")
+            logo = logo_match.group(1) if logo_match else ""
             
-    print(f"[OK] {output_file} guardado exitosamente.\n")
+            # Si el canal no tiene logo o está vacío, asigna tu imagen directamente
+            if not logo or logo.strip() == "": 
+                logo = DEFAULT_LOGO
+                
+            group = override_group if override_group else (group_match.group(1) if group_match else "Otros")
+            
+            current_item = {
+                "title": name,
+                "kind": "live",
+                "logo": logo,
+                "_groupName": group
+            }
+        elif line.startswith("http") and current_item:
+            current_item["ref"] = line
+            current_item["id"] = "ch-" + hashlib.sha1(line.encode('utf-8')).hexdigest()[:16]
+            items.append(current_item)
+            current_item = None
+            
+    return items
 
 def main():
-    print("--- PROCESANDO LISTA GLOBAL CON CATEGORÍAS ---")
-    latam_lines = ["#EXTM3U"]
+    todas_las_categorias = {}
     
-    # 1. INYECTAMOS TUS CANALES PROPIOS PRIMERO
-    latam_lines.extend(get_custom_lines())
-    
-    # 2. INYECTAMOS PLUTO TV ACTUALIZADO (MX, AR, ES)
-    for group_name, pluto_url in PLUTO_URLS.items():
-        try:
-            lines = download_content(pluto_url)
-            for line in lines:
-                if line.strip().upper() == "#EXTM3U":
-                    continue
-                if line.startswith("#EXTINF:"):
-                    if 'group-title=' in line:
-                        line = re.sub(r'group-title="[^"]*"', f'group-title="{group_name}"', line)
-                    else:
-                        parts = line.split(",", 1)
-                        if len(parts) == 2:
-                            line = f'{parts[0]} group-title="{group_name}",{parts[1]}'
-                latam_lines.append(line)
-        except Exception as e:
-            print(f"  -> Error con {group_name}: {e}")
-
-    # 3. DESCARGAMOS EL RESTO DE PAÍSES
-    for country_code, country_name in LATAM_COUNTRIES.items():
-        url = f"{RAW_BASE}{country_code}.m3u"
-        try:
-            lines = download_content(url)
-            for line in lines:
-                if line.strip().upper() == "#EXTM3U":
-                    continue
-                
-                if line.startswith("#EXTINF:"):
-                    if 'group-title=' in line:
-                        line = re.sub(r'group-title="[^"]*"', f'group-title="{country_name}"', line)
-                    else:
-                        parts = line.split(",", 1)
-                        if len(parts) == 2:
-                            line = f'{parts[0]} group-title="{country_name}",{parts[1]}'
-                            
-                latam_lines.append(line)
-        except urllib.error.HTTPError:
-            pass 
-        except Exception as e:
-            print(f"  -> Error con {country_name}: {e}")
+    def agregar_items(items):
+        for item in items:
+            group_name = item.pop("_groupName")
+            group_id = normalize_id(group_name)
             
-    process_playlist(latam_lines, "latam.m3u")
+            if group_id not in todas_las_categorias:
+                todas_las_categorias[group_id] = {
+                    "id": group_id,
+                    "title": group_name,
+                    "items": []
+                }
+            todas_las_categorias[group_id]["items"].append(item)
+
+    # 1. Leer Canales Propios Locales
+    if os.path.exists("propios.m3u"):
+        print("Procesando canales propios...")
+        with open("propios.m3u", "r", encoding="utf-8") as f:
+            agregar_items(parse_m3u(f.readlines()))
     
-    print("--- PROCESANDO ECUADOR INDIVIDUAL ---")
-    try:
-        ec_lines = ["#EXTM3U"]
-        ec_lines.extend(get_custom_lines())
+    # 2. Leer Pluto TV
+    for group_name, url in PLUTO_URLS.items():
+        agregar_items(parse_m3u(fetch_lines(url), override_group=group_name))
         
-        url = f"{RAW_BASE}ec.m3u"
-        lines = download_content(url)
-        for line in lines:
-            if line.strip().upper() == "#EXTM3U":
-                continue
-            if line.startswith("#EXTINF:"):
-                if 'group-title=' in line:
-                    line = re.sub(r'group-title="[^"]*"', 'group-title="Ecuador"', line)
-                else:
-                    parts = line.split(",", 1)
-                    if len(parts) == 2:
-                        line = f'{parts[0]} group-title="Ecuador",{parts[1]}'
-            ec_lines.append(line)
-        process_playlist(ec_lines, "ecuador.m3u")
-    except Exception as e:
-        print(f"Error procesando Ecuador: {e}")
+    # 3. Leer Países
+    for code, country_name in LATAM_COUNTRIES.items():
+        url = f"{RAW_BASE}{code}.m3u"
+        agregar_items(parse_m3u(fetch_lines(url), override_group=country_name))
+        
+    catalogo_final = list(todas_las_categorias.values())
+    
+    with open("catalogo.json", "w", encoding="utf-8") as f:
+        json.dump(catalogo_final, f, ensure_ascii=False, indent=2)
+        
+    print(f"\n[OK] catalogo.json generado con {len(catalogo_final)} categorías.")
 
 if __name__ == "__main__":
     main()
