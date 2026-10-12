@@ -16,7 +16,7 @@ PLUTO_URLS = {
 }
 
 # Nueva URL de Samsung TV Plus
-SAMSUNG_URL = "https://raw.githubusercontent.com/BuddyChewChew/samsungtvplus/refs/heads/main/output/samsung_tvplus.m3u"
+#SAMSUNG_URL = "https://raw.githubusercontent.com/BuddyChewChew/samsungtvplus/refs/heads/main/output/samsung_tvplus.m3u"
 
 LATAM_COUNTRIES = {
     "ar": "Argentina", "bo": "Bolivia", "br": "Brasil", "cl": "Chile", 
@@ -110,12 +110,12 @@ def main():
         
     catalogo_final = list(todas_las_categorias.values())
     
-    # Guardamos el JSON para Kino
+    # 1. Guardamos el JSON para Kino
     with open("catalogo.json", "w", encoding="utf-8") as f:
         json.dump(catalogo_final, f, ensure_ascii=False, indent=2)
     print(f"\n[OK] catalogo.json generado para Kino.")
 
-    # Guardamos el M3U para tu celular
+    # 2. Guardamos el M3U completo para tu celular
     with open("latam.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for categoria in catalogo_final:
@@ -124,6 +124,18 @@ def main():
                 f.write(f'#EXTINF:-1 tvg-id="{canal["id"]}" tvg-logo="{canal["logo"]}" group-title="{grupo}",{canal["title"]}\n')
                 f.write(f'{canal["ref"]}\n')
     print(f"[OK] latam.m3u generado para tu celular.")
+
+    # 3. Guardamos el M3U exclusivo de Ecuador
+    with open("ecuador.m3u", "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for categoria in catalogo_final:
+            # Filtramos solo la categoría que se llame "Ecuador"
+            if categoria["title"] == "Ecuador":
+                grupo = categoria["title"]
+                for canal in categoria["items"]:
+                    f.write(f'#EXTINF:-1 tvg-id="{canal["id"]}" tvg-logo="{canal["logo"]}" group-title="{grupo}",{canal["title"]}\n')
+                    f.write(f'{canal["ref"]}\n')
+    print(f"[OK] ecuador.m3u generado exclusivo.")
 
 if __name__ == "__main__":
     main()
