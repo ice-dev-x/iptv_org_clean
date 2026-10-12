@@ -1,225 +1,203 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="DragonBall_24/7_1" tvg-name="DB/Z" tvg-logo="https://www.vertvcable.com/wp-content/uploads/2026/07/dagonballz.jpg" group-title="24/7 y más (Experimental)",Dragon Ball/DBZ 24/7
-https://183.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8
-#EXTINF:-1 tvg-id="simpsons_1" tvg-name="simpsons" tvg-logo="" group-title="24/7 y más (Experimental)",Los Simpsons 24/7
-https://live20.bozztv.com/akamaissh101/ssh101/simplat/playlist.m3u8
-#EXTINF:-1 tvg-id="simpsons_2" tvg-name="simpsons" tvg-logo="" group-title="24/7 y más (Experimental)",Los Simpsons 24/7 (Op.2)
-https://lbgo.bozztv.com/ssh101/ssh101/simptestnews/playlist.m3u8
-#EXTINF:-1 tvg-id="caricaturas_1" tvg-name="caricaturas" tvg-logo="" group-title="24/7 y más (Experimental)",Caricaturas 24/7
-https://lbgo.bozztv.com/ssh101/ssh101/tvwxfxxgo/playlist.m3u8
-#EXTINF:-1 tvg-id="chavo_1" tvg-name="Chavo8" tvg-logo="" group-title="24/7 y más (Experimental)",Chavo del 8 24/7
-https://live20.bozztv.com/giatvplayout7/giatv-211465/playlist.m3u8
-#EXTINF:-1 tvg-id="chespirito_1" tvg-name="Chespirito" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/93/Chespirito_Cut_1617889980592.png" group-title="24/7 y más (Experimental)",Chespirito 24/7
-https://live20.bozztv.com/giatvplayout7/giatv-211111/playlist.m3u8
-#EXTINF:-1 tvg-id="Locomotion_1" tvg-name="locomotion" tvg-logo="https://ibb.co/8gBHbjMs" group-title="24/7 y más (Experimental)",Locomotion
-http://146.19.49.197:81/live/loco_hi/index.m3u8
-#EXTINF:-1 tvg-id="magickids" tvg-name="Magic Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logomagic96.png" group-title="24/7 y más (Experimental)",Magic Kids
-https://kiiroilabs.ddns.net/magickids/stream/stream.m3u8
-#EXTINF:-1 tvg-id="Espn_1" tvg-name="ESPN" tvg-logo="http://cdn.iconscout.com/icon/free/png-512/free-espn-logo-icon-svg-download-png-461787.png" group-title="24/7 y más (Experimental)",ESPN
-http://190.61.101.11:7050/play/a09k/index.m3u8?hls
-#EXTINF:-1 tvg-id="Espn2" tvg-name="ESPN_2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png" group-title="24/7 y más (Experimental)",ESPN 2
-http://190.61.101.11:7050/play/a05c/index.m3u8?hls
-#EXTINF:-1 tvg-id="AmericaEstereoGuayaquil.ec@SD" group-title="Ecuador",América Estéreo Guayaquil (360p)
+#EXTINF:-1 tvg-id="ch-96240d20365e0437" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",América Estéreo Guayaquil (360p)
 https://video.makrodigital.com/americaestereoguayaquil/americaestereoguayaquil/playlist.m3u8
-#EXTINF:-1 tvg-id="AmericaEstereoIbarra.ec@SD" group-title="Ecuador",América Estéreo Ibarra (720p)
+#EXTINF:-1 tvg-id="ch-0765cdfd94afb6e1" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",América Estéreo Ibarra (720p)
 https://video.makrodigital.com/americaestereoibarra/americaestereoibarra/playlist.m3u8
-#EXTINF:-1 tvg-id="AmericaEstereoQuito.ec@SD" group-title="Ecuador",América Estéreo Quito (1080p)
+#EXTINF:-1 tvg-id="ch-97e6e608b2c7f21c" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",América Estéreo Quito (1080p)
 https://video.makrodigital.com/americaestereoquito/americaestereoquito/playlist.m3u8
-#EXTINF:-1 tvg-id="AmericaEstereoTulcan.ec@SD" group-title="Ecuador",América Estéreo Tulcán (614p)
+#EXTINF:-1 tvg-id="ch-9d2e4e4d67354519" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",América Estéreo Tulcán (614p)
 https://video.makrodigital.com/americaestereotulcan/americaestereotulcan/playlist.m3u8
-#EXTINF:-1 tvg-id="AntenaUnoRadiovideo.ec@SD" group-title="Ecuador",Antena Uno RadioVideo (360p)
+#EXTINF:-1 tvg-id="ch-9151213d8ab59ee0" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Antena Uno RadioVideo (360p)
 https://tvdatta.com:3578/live/antenaunolive.m3u8
-#EXTINF:-1 tvg-id="Asomavision.ec@SD" group-title="Ecuador",Asomavisión (614p)
+#EXTINF:-1 tvg-id="ch-5b25522283f34697" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Asomavisión (614p)
 https://asomatv.cloud-ip.cc/livestream/stream.m3u8
-#EXTINF:-1 tvg-id="AustralTV.ec@SD" group-title="Ecuador",Austral TV (1080p)
+#EXTINF:-1 tvg-id="ch-e1db39bcfdc46383" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Austral TV (1080p)
 https://stmv3.voxtvhd.com.br/australtv/australtv/playlist.m3u8
-#EXTINF:-1 tvg-id="BacanTeVeo.ec@SD" group-title="Ecuador",Bacán Te Veo (360p)
+#EXTINF:-1 tvg-id="ch-f647a2a21a753032" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Bacán Te Veo (360p)
 https://stmv6.voxtvhd.com.br/vacantveo2/vacantveo2/playlist.m3u8
-#EXTINF:-1 tvg-id="CaprichoTV.ec@SD" group-title="Ecuador",Capricho TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-33eb6917f4d59719" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Capricho TV (720p) [Not 24/7]
 https://video.compuwebecuador.com:3783/live/caprichotvlive.m3u8
-#EXTINF:-1 tvg-id="CiracuTV.ec@SD" group-title="Ecuador",Ciracu TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-4b332cb9d7ba63a5" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ciracu TV (720p) [Not 24/7]
 https://cloud37.ecuatel.com/ciracutv/live/manifest.m3u8
-#EXTINF:-1 tvg-id="CuriquingueTV.ec@SD" group-title="Ecuador",Curiquingue TV (720p)
+#EXTINF:-1 tvg-id="ch-0a14f78a732c9520" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Curiquingue TV (720p)
 https://video2.lhdserver.es/pjtv/live.m3u8
-#EXTINF:-1 tvg-id="DuendeTv.ec@SD" group-title="Ecuador",Duende Tv (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-ccb07625fabb93b6" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Duende Tv (720p) [Not 24/7]
 https://live.fansplay.tv/livestreams/21.GdPGZIRcwzZ9vgE5.m3u8
-#EXTINF:-1 tvg-id="DuranTV.ec@SD" group-title="Ecuador",Durán TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-df23932d0416d9e9" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Durán TV (480p) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8074/index.m3u8
-#EXTINF:-1 tvg-id="EcotelTV.ec@SD" group-title="Ecuador",Ecotel TV (720p)
+#EXTINF:-1 tvg-id="ch-1cc9257f239c08b5" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ecotel TV (720p)
 https://ecoteltv.streamseguro.com:5443/LiveApp/streams/streaming.m3u8
-#EXTINF:-1 tvg-id="EcuadorTV.ec@SD" group-title="Ecuador",Ecuador TV (1080p)
+#EXTINF:-1 tvg-id="ch-c40678d5c659063f" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ecuador TV (1080p)
 http://45.224.97.181:9999/EcuadorTV/index.m3u8
-#EXTINF:-1 tvg-id="EcuadorTV.ec@SD_2" group-title="Ecuador",Ecuador TV
+#EXTINF:-1 tvg-id="ch-f3b22fd4fff68e09" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ecuador TV
 https://video-eu1.streamerr.co/hls/s64029a8fdf/live.m3u8
-#EXTINF:-1 tvg-id="EcuaMundoRadioTV.ec@SD" group-title="Ecuador",EcuaMundo Radio TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-cad9480cb8f7063c" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",EcuaMundo Radio TV (720p) [Not 24/7]
 https://pacific.direcnode.com:3353/live/ecuamundotvlive.m3u8
-#EXTINF:-1 tvg-id="Ecuavisa.ec@Quito" group-title="Ecuador",Ecuavisa (1080p)
+#EXTINF:-1 tvg-id="ch-03a5b3f82f4a66c1" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ecuavisa (1080p)
 http://45.171.108.253:8888/ECUAVISA/index.m3u8
-#EXTINF:-1 tvg-id="Ecuavisa.ec@Quito_2" group-title="Ecuador",Ecuavisa (1080p) (Opcion 2)
+#EXTINF:-1 tvg-id="ch-87c3f5c8451e1fdd" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ecuavisa (1080p)
 http://45.224.97.181:9999/Ecuavisa/index.m3u8
-#EXTINF:-1 tvg-id="Ecuavisa.ec@Guayaquil" group-title="Ecuador",Ecuavisa Guayaquil (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-42e485b9b0d72a53" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ecuavisa Guayaquil (1080p) [Not 24/7]
 https://dai.google.com/linear/hls/event/GyPkTVDZSXGhpOvxPK7m2g/master.m3u8
-#EXTINF:-1 tvg-id="Ecuavisa.ec@Quito_3" group-title="Ecuador",Ecuavisa Quito (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-1c142e287db14b4e" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ecuavisa Quito (1080p) [Not 24/7]
 https://redirector.dps.live/hls-video/c54ac2799874375c81c1672abb700870537c5223/ecuavisa/ecuavisa.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="EducaTV.ec@SD" group-title="Ecuador",Educa TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-933b11fe2209cf44" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Educa TV (720p) [Not 24/7]
 https://avm.ecuamedia.net/educatv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="ElSolNetworkTV.ec@SD" group-title="Ecuador",El Sol Network TV (1080p)
+#EXTINF:-1 tvg-id="ch-353ec9d8e6136ad6" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",El Sol Network TV (1080p)
 https://tv.wracanal10.com:3025/live/elsoltvlive.m3u8
-#EXTINF:-1 tvg-id="FMMundo.ec@SD" group-title="Ecuador",FM Mundo (1080p)
+#EXTINF:-1 tvg-id="ch-1311ab8791e6fced" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",FM Mundo (1080p)
 https://video2.makrodigital.com/fmmundo/fmmundo/playlist.m3u8
-#EXTINF:-1 tvg-id="Gamavision.ec@SD" group-title="Ecuador",Gamavision (1080p)
+#EXTINF:-1 tvg-id="ch-dcf211edcb6157fb" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Gamavision (1080p)
 http://45.224.97.181:9999/Gamavision/index.m3u8
-#EXTINF:-1 tvg-id="Gamavision.ec@SD_2" group-title="Ecuador",Gamavisión (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-2ce931fceb7c8d4f" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Gamavisión (720p) [Not 24/7]
 https://stream.esradioecuador.com/hls/stream.m3u8
-#EXTINF:-1 tvg-id="GaviotaTV.ec@SD" group-title="Ecuador",Gaviota TV [Not 24/7]
+#EXTINF:-1 tvg-id="ch-9e0228549bb55386" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Gaviota TV [Not 24/7]
 https://gaviotatv.streamseguro.com:3195/live/gaviotatvlive.m3u8
-#EXTINF:-1 tvg-id="GM7Digital.ec@HD" group-title="Ecuador",GM7 Digital [Not 24/7]
+#EXTINF:-1 tvg-id="ch-a181d4d01fb79778" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",GM7 Digital [Not 24/7]
 https://s2.tvdatta.com:3858/live/gm7digitallive.m3u8
-#EXTINF:-1 tvg-id="HechosEcuador.ec@SD" group-title="Ecuador",Hechos Ecuador (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-18fda7111d59db9c" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Hechos Ecuador (1080p) [Not 24/7]
 https://online.hechosecuador.com:5443/WebRTCApp/streams/hechosecuador.m3u8
-#EXTINF:-1 tvg-id="IeanJesusEcuador.ec@SD" group-title="Ecuador",IeanJesus Ecuador (720p)
+#EXTINF:-1 tvg-id="ch-bb6a510c8feb7d9f" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",IeanJesus Ecuador (720p)
 https://cloud37.ecuatel.com/iglesia2020/Stream1/playlist.m3u8
-#EXTINF:-1 tvg-id="ImperioTVCanal6.ec@SD" group-title="Ecuador",Imperio TV Canal 6 (720p)
+#EXTINF:-1 tvg-id="ch-4035b9441acb5790" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Imperio TV Canal 6 (720p)
 https://live21.bozztv.com/akamaissh101/ssh101/imperiotvcanal6/playlist.m3u8
-#EXTINF:-1 tvg-id="InfinitaTV.ec@SD" group-title="Ecuador",Infinita TV (1080p)
+#EXTINF:-1 tvg-id="ch-12ff46b963b644b9" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Infinita TV (1080p)
 https://s2.tvdatta.com:3753/hybrid/play.m3u8
-#EXTINF:-1 tvg-id="IntiTV.ec@SD" group-title="Ecuador",Inti TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-a4b918fe993a71a5" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Inti TV (1080p) [Not 24/7]
 https://5e2f36bc1c433.streamlock.net/inti/inti-network.stream/.m3u8
-#EXTINF:-1 tvg-id="KCHTV.ec@SD" group-title="Ecuador",KCHTV (1080p)
+#EXTINF:-1 tvg-id="ch-c3f0ae02c95cde48" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",KCHTV (1080p)
 http://iptv.kchtv.video.makrodigital.com:8081/kchtv/iptv/playlist.m3u8
-#EXTINF:-1 tvg-id="LaNuevaRadioTV977.ec@SD" group-title="Ecuador",La Nueva Radio TV 97.7 (1080p)
+#EXTINF:-1 tvg-id="ch-eb3e0c492b05c5e6" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",La Nueva Radio TV 97.7 (1080p)
 https://sv72.ecuaradiotv.net/lanuevatv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="LaPerlaRadioTV.ec@SD" group-title="Ecuador",La Perla Radio TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-9a49cfa6a03c467e" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",La Perla Radio TV (720p) [Not 24/7]
 https://eu1.servers10.com:8081/8068/index.m3u8
-#EXTINF:-1 tvg-id="LatacungaTV.ec@SD" group-title="Ecuador",Latacunga TV (360p)
+#EXTINF:-1 tvg-id="ch-cb78202701d3eaff" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Latacunga TV (360p)
 https://stmv1.voxtvhd.com.br/latacungatv/latacungatv/playlist.m3u8
-#EXTINF:-1 tvg-id="LoretoTV.ec@SD" group-title="Ecuador",Loreto TV (720p)
+#EXTINF:-1 tvg-id="ch-e3d15033aee76d63" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Loreto TV (720p)
 https://loretotv.moxapps.shop/live/QFM7KYOlxWd47ybXB3Z1u2P13Py1/index.m3u8
-#EXTINF:-1 tvg-id="MajestadTelevision.ec@SD" group-title="Ecuador",Majestad Televisión (720p)
+#EXTINF:-1 tvg-id="ch-b6243e44613980ef" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Majestad Televisión (720p)
 https://videoserver.tmcreativos.com:19360/majestadtv/majestadtv.m3u8
-#EXTINF:-1 tvg-id="MakroDigitalTelevision.ec@SD" group-title="Ecuador",MakroDigital Television (1080p)
-#EXTVLCOPT:http-referrer=https://makrodigitaltelevision.com
+#EXTINF:-1 tvg-id="ch-42ceb9ac1da72070" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",MakroDigital Television (1080p)
 https://makrodigitaltv.makrodigital.com/makrodigitaltelevision/iptv/playlist.m3u8
-#EXTINF:-1 tvg-id="MakroDigitalTelevision.ec@SD_2" group-title="Ecuador",MakroDigital Television (720p)
+#EXTINF:-1 tvg-id="ch-5948f5e0780adc27" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",MakroDigital Television (720p)
 http://iptv.makrodigitaltv.makrodigital.com:8081/makrodigitaltelevision/iptv/playlist.m3u8
-#EXTINF:-1 tvg-id="Manavision.ec@SD" group-title="Ecuador",Manavisión (480p)
+#EXTINF:-1 tvg-id="ch-06ea2ac2983acae9" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Manavisión (480p)
 https://play.once.net.ec/play/Ily2oYdd3E1fi9wK2zORoRovFU9P5xM0g3CNVK2MT0M/.m3u8
-#EXTINF:-1 tvg-id="MarcaTV.ec@SD" group-title="Ecuador",Marca TV (1080p)
+#EXTINF:-1 tvg-id="ch-64a5a32b6ee7f99d" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Marca TV (1080p)
 http://200.7.219.221:8088/live/livetv/index.m3u8
-#EXTINF:-1 tvg-id="MarioPintoTV.ec@SD" group-title="Ecuador",Mario Pinto TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-466355765b930082" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Mario Pinto TV (720p) [Not 24/7]
 https://eu1.servers10.com:8081/8028/index.m3u8
-#EXTINF:-1 tvg-id="MelRadioTV.ec@SD" group-title="Ecuador",Mel Radio TV (360p)
+#EXTINF:-1 tvg-id="ch-55fb0298e9ba6c3b" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Mel Radio TV (360p)
 https://eu1.servers10.com:8081/8334/index.m3u8
-#EXTINF:-1 tvg-id="MetropoliMediosTV.ec@SD" group-title="Ecuador",Metropoli Medios TV (720p)
+#EXTINF:-1 tvg-id="ch-8b48e271f04f85c9" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Metropoli Medios TV (720p)
 https://eu1.servers10.com:8081/8214/index.m3u8
-#EXTINF:-1 tvg-id="MulticanalCatamayo.ec@SD" group-title="Ecuador",Multicanal Catamayo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-0fb91e36f2bd8a60" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Multicanal Catamayo (720p) [Not 24/7]
 https://multicanal.streamseguro.com:5443/LiveApp/streams/streaming.m3u8
-#EXTINF:-1 tvg-id="NukaTV.ec@SD" group-title="Ecuador",Ñuka TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-e16bcec089f6b3b7" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ñuka TV (720p) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8118/index.m3u8
-#EXTINF:-1 tvg-id="OndasQuevedenasTV.ec@SD" group-title="Ecuador",Ondas Quevedeñas TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-e0bb7e8d5fc8e1f5" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ondas Quevedeñas TV (720p) [Not 24/7]
 https://stmv6.voxtvhd.com.br/radiosuprema/radiosuprema/playlist.m3u8
-#EXTINF:-1 tvg-id="OromarTV.ec@SD" group-title="Ecuador",Oromar TV (1080p)
+#EXTINF:-1 tvg-id="ch-16953b840b61ba43" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Oromar TV (1080p)
 http://45.224.97.181:9999/Oromar/index.m3u8
-#EXTINF:-1 tvg-id="OromarTV.ec@SD_2" group-title="Ecuador",Oromar TV (720p)
+#EXTINF:-1 tvg-id="ch-d2366bf1cb786bbf" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Oromar TV (720p)
 https://stream.oromar.tv/hls/oromartv_hi/index.m3u8
-#EXTINF:-1 tvg-id="OromarTVPlus.ec@SD" group-title="Ecuador",Oromar TV+ (720p)
+#EXTINF:-1 tvg-id="ch-66d807b4904d4ee1" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Oromar TV+ (720p)
 https://stream.oromar.tv/hls/camriva/index.m3u8
-#EXTINF:-1 tvg-id="PantallaClasicaEC.ec@SD" group-title="Ecuador",Pantalla Clásica EC (512p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-ba7f49c70b2f0e58" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Pantalla Clásica EC (512p) [Not 24/7]
 https://live21.bozztv.com/akamaissh101/ssh101/pantallaclasics/playlist.m3u8
-#EXTINF:-1 tvg-id="PlanetaChannel.ec@SD" group-title="Ecuador",Planeta Channel [Not 24/7]
+#EXTINF:-1 tvg-id="ch-054d007144a635ac" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Planeta Channel [Not 24/7]
 https://vs20.live.opencaster.com/planetachannel_089eff6d/index.m3u8
-#EXTINF:-1 tvg-id="PlusTV.ec@SD" group-title="Ecuador",Plus TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-8ea259a686c9caf8" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Plus TV (720p) [Not 24/7]
 https://plustv.streamseguro.com:5443/LiveApp/streams/streaming.m3u8
-#EXTINF:-1 tvg-id="PuruwaTV.ec@SD" group-title="Ecuador",Puruwa TV (1080p)
+#EXTINF:-1 tvg-id="ch-853e0dd0f4f9caf9" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Puruwa TV (1080p)
 https://live.tvcontrolcp.com:1936/puruwatv/puruwatv/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioBonita1067.ec@SD" group-title="Ecuador",Radio Bonita 106.7 (720p)
+#EXTINF:-1 tvg-id="ch-34c8936e328b8fa2" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Radio Bonita 106.7 (720p)
 https://cloudvideo.servers10.com:8081/8154/index.m3u8
-#EXTINF:-1 tvg-id="RadioCuencaEstereo.ec@SD" group-title="Ecuador",Radio Cuenca Estéreo (720p)
+#EXTINF:-1 tvg-id="ch-043537bfdbc33901" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Radio Cuenca Estéreo (720p)
 https://eu1.servers10.com:8081/8074/index.m3u8
-#EXTINF:-1 tvg-id="RadioFantastica989FM.ec@SD" group-title="Ecuador",Radio Fantástica 98.9 FM (1080p)
+#EXTINF:-1 tvg-id="ch-aec31eb07943d656" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Radio Fantástica 98.9 FM (1080p)
 http://190.107.232.9:8082/livestream/stream.m3u8
-#EXTINF:-1 tvg-id="RadioImpacto2.ec@SD" group-title="Ecuador",Radio Impacto 2 (288p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-e3081b8d85796022" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Radio Impacto 2 (288p) [Not 24/7]
 https://panel.streamingtv-mediacp.online:1936/jawepvrvyz/jawepvrvyz/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioMonumentalTV.ec@SD" group-title="Ecuador",Radio Monumental TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-541b108aa208f88c" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Radio Monumental TV (720p) [Not 24/7]
 https://cloud37.ecuatel.com/monumentaltv/live/manifest.m3u8
-#EXTINF:-1 tvg-id="RedTVEVentanas.ec@SD" group-title="Ecuador",Red TVE Ventanas (432p)
+#EXTINF:-1 tvg-id="ch-21065bdbefa75cfb" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Red TVE Ventanas (432p)
 https://s2.tvdatta.com:3825/live/redtvelive.m3u8
-#EXTINF:-1 tvg-id="RTRTV.ec@SD" group-title="Ecuador",RTRTV (1080p)
+#EXTINF:-1 tvg-id="ch-40d3a19ab5ca84ee" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",RTRTV (1080p)
 https://tv3ecuador.site/hls/stream/index.m3u8
-#EXTINF:-1 tvg-id="RTS.ec@SD" group-title="Ecuador",RTS (1080p)
+#EXTINF:-1 tvg-id="ch-1b9bbd2a9dd4985e" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",RTS (1080p)
 http://45.171.108.253:8888/RTS/index.m3u8
-#EXTINF:-1 tvg-id="RTS.ec@SD_2" group-title="Ecuador",RTS (1080p) (Opcion 2)
+#EXTINF:-1 tvg-id="ch-dac97b1f8d823277" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",RTS (1080p)
 http://45.224.97.181:9999/RTS/index.m3u8
-#EXTINF:-1 tvg-id="RTS.ec@SD_3" group-title="Ecuador",RTS (720p)
+#EXTINF:-1 tvg-id="ch-1d5d4861e2ef9a80" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",RTS (720p)
 http://157.100.248.242:8080/RTSHD/index.m3u8
-#EXTINF:-1 tvg-id="RTS.ec@SD_4" group-title="Ecuador",RTS (480p)
+#EXTINF:-1 tvg-id="ch-e9d4409bc355ea4e" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",RTS (480p)
 https://d2w3o8zn50cs1k.cloudfront.net/ts:abr.m3u8
-#EXTINF:-1 tvg-id="RTU.ec@SD" group-title="Ecuador",RTU (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-e1899cf9ac4f4677" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",RTU (1080p) [Not 24/7]
 https://video1.makrodigital.com/rtu/rtu/chunks.m3u8?nimblesessionid=
-#EXTINF:-1 tvg-id="RTU.ec@SD_2" group-title="Ecuador",RTU (1080p)
+#EXTINF:-1 tvg-id="ch-6faaffd19467aa7d" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",RTU (1080p)
 http://45.224.97.181:9999/RTU/index.m3u8
-#EXTINF:-1 tvg-id="RTV.ec@SD" group-title="Ecuador",RTV Riobamba (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-fc137872384b05ba" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",RTV Riobamba (720p) [Not 24/7]
 https://sv72.ecuaradiotv.net/rtvhd/live/manifest.m3u8
-#EXTINF:-1 tvg-id="SonoOndaTV.ec@SD" group-title="Ecuador",Sono Onda TV (720p)
+#EXTINF:-1 tvg-id="ch-3485acee81259596" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Sono Onda TV (720p)
 https://live.obslivestream.com/sonoondatv/index.m3u8
-#EXTINF:-1 tvg-id="StudioPlusTV.ec@SD" group-title="Ecuador",Studio + TV (720p)
+#EXTINF:-1 tvg-id="ch-a5af9669273bf8d3" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Studio + TV (720p)
 https://cloudvideo.servers10.com:8081/8184/index.m3u8
-#EXTINF:-1 tvg-id="TCTelevision.ec@SD" group-title="Ecuador",TC Television (1080p)
+#EXTINF:-1 tvg-id="ch-2bb2952cd017e3b9" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TC Television (1080p)
 http://45.224.97.181:9999/TC/index.m3u8
-#EXTINF:-1 tvg-id="TCTelevision.ec@SD_2" group-title="Ecuador",TC Television
+#EXTINF:-1 tvg-id="ch-95c7d5c11561cf7c" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TC Television
 http://177.234.218.66:8084/play/a089/index.m3u8
-#EXTINF:-1 tvg-id="Teleamazonas.ec@Quito" group-title="Ecuador",Teleamazonas (1080p)
+#EXTINF:-1 tvg-id="ch-fcb560d9f2160ae7" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Teleamazonas (1080p)
 http://45.171.108.253:8888/TELEAMAZONAS/index.m3u8
-#EXTINF:-1 tvg-id="Teleamazonas.ec@Quito_2" group-title="Ecuador",Teleamazonas (1080p) (Opcion 2)
+#EXTINF:-1 tvg-id="ch-502ce794608c49eb" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Teleamazonas (1080p)
 http://45.224.97.181:9999/Teleamazonas/index.m3u8
-#EXTINF:-1 tvg-id="Teleamazonas.ec@SD" group-title="Ecuador",Teleamazonas (1080p) (Opcion 3)
+#EXTINF:-1 tvg-id="ch-b19915ba9506730c" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Teleamazonas (1080p)
 https://teleamazonas-live.cdn.vustreams.com/live/fd4ab346-b4e3-4628-abf0-b5a1bc192428/live.isml/playlist.m3u8
-#EXTINF:-1 tvg-id="Teleamazonas.ec@Quito_3" group-title="Ecuador",Teleamazonas (720p)
+#EXTINF:-1 tvg-id="ch-c82d4593a45db6c7" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Teleamazonas (720p)
 http://157.100.248.242:8080/TeleamazonasHD/index.m3u8
-#EXTINF:-1 tvg-id="Teleamazonas.ec@Quito_4" group-title="Ecuador",Teleamazonas Quito (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ch-9d29dea1f1f88914" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Teleamazonas Quito (1080p) [Geo-blocked]
 https://teleamazonas-live.cdn.vustreams.com/live/fd4ab346-b4e3-4628-abf0-b5a1bc192428/live.isml/fd4ab346-b4e3-4628-abf0-b5a1bc192428.m3u8
-#EXTINF:-1 tvg-id="Telecosta.ec@SD" group-title="Ecuador",Telecosta
+#EXTINF:-1 tvg-id="ch-cda0c47049731b25" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Telecosta
 https://telecosta.botlife.app/memfs/6ba9dc9a-aff4-4e4e-9466-a9f0c714b60b.m3u8
-#EXTINF:-1 tvg-id="Telemar.ec@SD" group-title="Ecuador",Telemar (720p)
+#EXTINF:-1 tvg-id="ch-752a19c99eb23410" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Telemar (720p)
 https://cloudpro.servidoresdestream.com:8081/8020/index.m3u8
-#EXTINF:-1 tvg-id="Telerama.ec@SD" group-title="Ecuador",Telerama (240p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-8bb3684d12e81306" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Telerama (240p) [Not 24/7]
 https://play.once.net.ec/telerama/live.tv/538.m3u8
-#EXTINF:-1 tvg-id="Telesucesos.ec@SD" group-title="Ecuador",Telesucesos (720p) [Not 24/7]
-#EXTVLCOPT:http-referrer=https://ticsbalancer.ticsecuador.com.ec:4444/TeleSucesos/play.html?name=UIO-HD
+#EXTINF:-1 tvg-id="ch-28ef5b054f7473cd" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Telesucesos (720p) [Not 24/7]
 https://ticsbalancer.ticsecuador.com.ec:4444/TeleSucesos/streams/UIO-HD_adaptive.m3u8
-#EXTINF:-1 tvg-id="TVCisne.ec@SD" group-title="Ecuador",TV Cisne (1080p)
+#EXTINF:-1 tvg-id="ch-82e7110893af2fad" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TV Cisne (1080p)
 https://video2.lhdserver.es/tvcisne/live.m3u8
-#EXTINF:-1 tvg-id="TVColorCanal36.ec@SD" group-title="Ecuador",TV Color Canal 36 (720p)
+#EXTINF:-1 tvg-id="ch-22bee60f1701b8ac" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TV Color Canal 36 (720p)
 https://video.compuwebecuador.com:3067/live/tvcolorlive.m3u8
-#EXTINF:-1 tvg-id="TVLegislativa.ec@SD" group-title="Ecuador",TV Legislativa (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-794a7edc6ebfa783" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TV Legislativa (1080p) [Not 24/7]
 https://streamingav.asambleanacional.gob.ec/hls/stream.m3u8
-#EXTINF:-1 tvg-id="TVUniversalEcuador.ec@SD" group-title="Ecuador",TV Universal Ecuador (720p)
+#EXTINF:-1 tvg-id="ch-e6b5197b0dfeec8f" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TV Universal Ecuador (720p)
 https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8
-#EXTINF:-1 tvg-id="TVC.ec@SD" group-title="Ecuador",TVC (1080p)
+#EXTINF:-1 tvg-id="ch-2631d12011881b03" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TVC (1080p)
 http://45.224.97.181:9999/TVC/index.m3u8
-#EXTINF:-1 tvg-id="TVC.ec@SD_2" group-title="Ecuador",TVC (720p)
+#EXTINF:-1 tvg-id="ch-d2820291e70eac8a" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TVC (720p)
 http://157.100.248.242:8080/TVCHD/index.m3u8
-#EXTINF:-1 tvg-id="TVC.ec@SD_3" group-title="Ecuador",TVC (480i)
+#EXTINF:-1 tvg-id="ch-6fd5b791606bb0ba" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TVC (480i)
 https://d2m7i0pvomh4vg.cloudfront.net/ts:abr.m3u8
-#EXTINF:-1 tvg-id="TvOro.ec@SD" group-title="Ecuador",TvOro (1080p)
+#EXTINF:-1 tvg-id="ch-0f0490a2b7498533" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",TvOro (1080p)
 http://45.187.0.19:9090/tvusa/index.m3u8
-#EXTINF:-1 tvg-id="UEBITVOnline.ec@SD" group-title="Ecuador",UEBI TV Online (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-172bc7976a7721b3" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",UEBI TV Online (720p) [Not 24/7]
 https://ventaxtv.com:3575/live/uebilive.m3u8
-#EXTINF:-1 tvg-id="UNIANDESTV.ec@SD" group-title="Ecuador",UNIANDES TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-3511d49128abfb00" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",UNIANDES TV (720p) [Not 24/7]
 https://video.compuwebecuador.com:3323/live/uniandeslive.m3u8
-#EXTINF:-1 tvg-id="UnsionTV.ec@SD" group-title="Ecuador",Unsion TV (1080p)
+#EXTINF:-1 tvg-id="ch-8cd8169a69a5fd54" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Unsion TV (1080p)
 http://provedores.unsion.tv:8081/srt/1/playlist.m3u8
-#EXTINF:-1 tvg-id="VitoTVO.ec@SD" group-title="Ecuador",VitoTVO (1080p)
+#EXTINF:-1 tvg-id="ch-9bbab8ca970e4f84" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",VitoTVO (1080p)
 http://iptv.vitotvo.video.makrodigital.com:8081/vitotvo/iptv/playlist.m3u8
-#EXTINF:-1 tvg-id="VosyTV.ec@SD" group-title="Ecuador",Vos y TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-902798af49b4f817" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Vos y TV (720p) [Not 24/7]
 https://cloud37.ecuatel.com/vostv/live/manifest.m3u8
-#EXTINF:-1 tvg-id="WuanPlus.ec@SD" group-title="Ecuador",Wuan+
+#EXTINF:-1 tvg-id="ch-a0d1f1184d23f274" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Wuan+
 https://7.innovatestream.pe:19360/ecuadortest/ecuadortest.m3u8
-#EXTINF:-1 tvg-id="ZaracayTV.ec@SD" group-title="Ecuador",Zaracay TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ch-30a4bcccbd4e1d93" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Zaracay TV (1080p) [Not 24/7]
 https://video2.makrodigital.com/zaracay/zaracay/playlist.m3u8
-#EXTINF:-1 tvg-id="StudioPlusTV.ec@HD" group-title="Ecuador",Studio + TV (1080p)
+#EXTINF:-1 tvg-id="ch-c828da0728d73f9f" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Studio + TV (1080p)
 https://vd01.streaminghd.net.ar:3113/hybrid/play.m3u8
-#EXTINF:-1 tvg-id="EcuadorTV.ec@SD_3" group-title="Ecuador",Ecuador TV (720p)
+#EXTINF:-1 tvg-id="ch-15c870af7394ceac" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Ecuador TV (720p)
 http://38.44.109.41:8003/play/a0e9/index.m3u8
-#EXTINF:-1 tvg-id="Gamavision.ec@SD_3" group-title="Ecuador",Gamavision (1080p) (Opcion 2)
+#EXTINF:-1 tvg-id="ch-e651dddbb1f05ac1" tvg-logo="https://i.ibb.co/d4wr01bB/tv.webp" group-title="Ecuador",Gamavision (1080p)
 http://181.78.211.244:8000/play/a0a2/index.m3u8
