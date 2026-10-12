@@ -23945,6 +23945,13 @@
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
         "ref": "https://barinaslive1.boldmss.com/DISNEY/DISNEY.isml/DISNEY.m3u8",
         "id": "ch-669584aef686b586"
+      },
+      {
+        "title": "TV Publica Marcos Paz (720p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://ca.centaurychile.com:2443/hls/mediospublicos.m3u8",
+        "id": "ch-f5d0c8288102365e"
       }
     ]
   },
@@ -27884,6 +27891,13 @@
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
         "ref": "https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8",
         "id": "ch-b3c3186f7a69e8bc"
+      },
+      {
+        "title": "+MaisUm (720p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
+        "id": "ch-1f959bb775950d41"
       }
     ]
   },
@@ -31501,6 +31515,20 @@
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
         "ref": "https://barinaslive1.boldmss.com/RCN/RCN.isml/RCN.m3u8",
         "id": "ch-688b93ae9ab38d6b"
+      },
+      {
+        "title": "Sin Limites (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://170.244.209.30:8000/play/a1im/index.m3u8",
+        "id": "ch-b71a48821dfbcb7f"
+      },
+      {
+        "title": "RCN Mas (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://45.224.96.220:18000/play/a098/index.m3u8",
+        "id": "ch-529818595463d8ec"
       }
     ]
   },
@@ -34069,14 +34097,14 @@
         "id": "ch-7475c26abfc5c519"
       },
       {
-        "title": "Antena 7 (720p) [Not 24/7]",
+        "title": "Antena 7 HD (1080p) [Not 24/7]",
         "kind": "live",
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
         "ref": "https://hls.tvabierta.net/hls/007.m3u8",
         "id": "ch-9a0be0c2854f708c"
       },
       {
-        "title": "Antena 21 (720p) [Not 24/7]",
+        "title": "Antena 21 HD (720p) [Not 24/7]",
         "kind": "live",
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
         "ref": "https://hls.tvabierta.net/hls/021.m3u8",
@@ -34116,6 +34144,13 @@
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
         "ref": "https://cdn4.wind.do/streams/colorvision/colorvision_master.m3u8",
         "id": "ch-80a0ccb8f4fb04d2"
+      },
+      {
+        "title": "Tarima TV (720p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://190.122.104.210:5080/LiveApp/streams/tarima.m3u8",
+        "id": "ch-660bd93ac22946af"
       }
     ]
   },
@@ -40491,6 +40526,27 @@
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
         "ref": "http://170.244.209.30:8000/play/a1i8/index.m3u8",
         "id": "ch-f903bd075e879d89"
+      },
+      {
+        "title": "Exitosa TV (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://170.244.209.30:8000/play/a1ic/index.m3u8",
+        "id": "ch-7dee362544c43bed"
+      },
+      {
+        "title": "Willax TV (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://170.244.209.30:8000/play/a1id/index.m3u8",
+        "id": "ch-f715997ce3af42df"
+      },
+      {
+        "title": "Canal N (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://170.244.209.30:8000/play/a1ib/index.m3u8",
+        "id": "ch-ae3e6338ac20723e"
       }
     ]
   },
@@ -43860,13 +43916,6 @@
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
         "ref": "http://190.11.225.124:5000/live/axn_hd/playlist.m3u8",
         "id": "ch-b18af97f2c08aa0a"
-      },
-      {
-        "title": "AXN Latin America South",
-        "kind": "live",
-        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
-        "ref": "http://45.228.235.116:8000/play/a0iy/index.m3u8",
-        "id": "ch-ff741eb1ff3be264"
       },
       {
         "title": "AXN White [Not 24/7]",
@@ -49462,13 +49511,6 @@
         "id": "ch-136ed5a88fd4dba9"
       },
       {
-        "title": "AXN Latin America South (1080p)",
-        "kind": "live",
-        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
-        "ref": "http://181.78.12.119:16123/play/ch46/index.m3u8",
-        "id": "ch-0c2a6e34ae89b364"
-      },
-      {
         "title": "S Play Event (1080p)",
         "kind": "live",
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
@@ -50608,6 +50650,125 @@
         "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
         "ref": "https://twcprod-live.twc-tv.com/v1/manifest/b4d4d63a49309cc5140171fb2e92485c31be1e9e/DSP_6228e4760505741a116f1ba2_twcprod-live/6bf09ce5-366b-463c-b67e-c4b799f73c3f/4.m3u8",
         "id": "ch-0705c791c7778d79"
+      },
+      {
+        "title": "NFL Network (720p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://198.58.104.90:8989/nfl/index.m3u8",
+        "id": "ch-367a574e545316ee"
+      },
+      {
+        "title": "CNN International (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://d3bp6dwmpbdajl.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ury0meh5m4nzm/index.m3u8",
+        "id": "ch-d444e810711b6901"
+      },
+      {
+        "title": "CNN en Espanol (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist.m3u8",
+        "id": "ch-014063ad219e8bda"
+      },
+      {
+        "title": "HGTV Asia (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://freem3u.xyz/api/live/play.m3u8?vid=99",
+        "id": "ch-d942b2813d31a26a"
+      },
+      {
+        "title": "Outdoor Channel Vietnam (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://freem3u.xyz/api/live/play.m3u8?vid=216",
+        "id": "ch-9b24a886a64c81fc"
+      },
+      {
+        "title": "Cartoon Network Latin America Mexico",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://zg9mhld.s.gy/HD-CARTOON-MX.ts",
+        "id": "ch-61939dc846888e52"
+      },
+      {
+        "title": "Lifetime Latin America Mexico (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://streaming.onnethn.com/LIFETIME/index.m3u8",
+        "id": "ch-e96971a835e55f0d"
+      },
+      {
+        "title": "ESPN Latin America Colombia (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://190.61.47.54:8000/play/a004/index.m3u8",
+        "id": "ch-3a59d7a0818b0ea8"
+      },
+      {
+        "title": "ESPN 2 Latin America Colombia (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://190.61.47.54:8000/play/a005/index.m3u8",
+        "id": "ch-98fa7dc13b05eab5"
+      },
+      {
+        "title": "Boomerang (720p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://23.237.104.106:8080/USA_BOOMERANG/index.m3u8",
+        "id": "ch-f9ec06556a0c276f"
+      },
+      {
+        "title": "Cartoon Network (720p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://tvsen7.aynascope.net/cartoonnetwork/index.m3u8",
+        "id": "ch-8d28ce6b97f4e60b"
+      },
+      {
+        "title": "HBO Hits (720p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://tvsen7.aynascope.net/hbo2/index.m3u8",
+        "id": "ch-a8b3f18e04f0f589"
+      },
+      {
+        "title": "HBO (720p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "http://tvsen7.aynascope.net/hbo/index.m3u8",
+        "id": "ch-00d23921c91090a6"
+      },
+      {
+        "title": "CNN International North America (1080p)",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://d2sybdl23b9psq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-bocx3i7bjz0dg/CNNFAST_GB.m3u8",
+        "id": "ch-46bb98a7879eef63"
+      },
+      {
+        "title": "AXN Latin America South",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/axn.stream/chunks.m3u8",
+        "id": "ch-fea3bbb0b65a05a6"
+      },
+      {
+        "title": "Cartoon Network Latin America",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/cartoonnetwork.stream/chunks.m3u8",
+        "id": "ch-8c72bcba48af63f5"
+      },
+      {
+        "title": "Cinecanal South",
+        "kind": "live",
+        "logo": "https://i.ibb.co/d4wr01bB/tv.webp",
+        "ref": "https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/Cinecanal-key/chunks.m3u8",
+        "id": "ch-8131987c3b7eb0ba"
       }
     ]
   }
