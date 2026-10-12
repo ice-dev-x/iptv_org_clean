@@ -101,7 +101,7 @@ def main():
         agregar_items(parse_m3u(fetch_lines(url), override_group=group_name))
         
     # 3. Leer Samsung TV Plus (Agrupado en una sola categoría)
-    agregar_items(parse_m3u(fetch_lines(SAMSUNG_URL), override_group="Samsung TV Plus"))
+    ##agregar_items(parse_m3u(fetch_lines(SAMSUNG_URL), override_group="Samsung TV Plus"))
         
     # 4. Leer Países Latam
     for code, country_name in LATAM_COUNTRIES.items():
