@@ -27,7 +27,7 @@ jobs:
           git config --global user.email 'action@github.com'
           
           # 1. Agregamos el archivo JSON generado en lugar de los M3U
-          git add catalogo.json
+          git add catalogo.json latam.m3u ecuador.m3u
           
           # 2. Tu misma condición inteligente para subir solo si hay cambios
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update catalogo.json" && git push)
