@@ -8,6 +8,41 @@ import os
 DEFAULT_LOGO = "https://i.ibb.co/d4wr01bB/tv.webp"
 RAW_BASE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/"
 
+# ==========================================
+# TUS CANALES PROPIOS (INTEGRADOS)
+# ==========================================
+MIS_CANALES_PROPIOS = """
+#EXTINF:-1 tvg-id="DragonBall_24/7_1" tvg-name="DB/Z" tvg-logo="https://www.vertvcable.com/wp-content/uploads/2026/07/dagonballz.jpg" group-title="24/7 y más (Experimental)",Dragon Ball/DBZ 24/7
+https://183.bozztv.com/giatv/giatv-dball/dball/playlist.m3u8
+
+#EXTINF:-1 tvg-id="simpsons_1" tvg-name="simpsons" tvg-logo="" group-title="24/7 y más (Experimental)",Los Simpsons 24/7
+https://live20.bozztv.com/akamaissh101/ssh101/simplat/playlist.m3u8
+
+#EXTINF:-1 tvg-id="simpsons_2" tvg-name="simpsons" tvg-logo="" group-title="24/7 y más (Experimental)",Los Simpsons 24/7 (Op.2)
+https://lbgo.bozztv.com/ssh101/ssh101/simptestnews/playlist.m3u8
+
+#EXTINF:-1 tvg-id="caricaturas_1" tvg-name="caricaturas" tvg-logo="" group-title="24/7 y más (Experimental)",Caricaturas 24/7
+https://lbgo.bozztv.com/ssh101/ssh101/tvwxfxxgo/playlist.m3u8
+
+#EXTINF:-1 tvg-id="chavo_1" tvg-name="Chavo8" tvg-logo="" group-title="24/7 y más (Experimental)",Chavo del 8 24/7  
+https://live20.bozztv.com/giatvplayout7/giatv-211465/playlist.m3u8
+
+#EXTINF:-1 tvg-id="chespirito_1" tvg-name="Chespirito" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/93/Chespirito_Cut_1617889980592.png" group-title="24/7 y más (Experimental)",Chespirito 24/7  
+https://live20.bozztv.com/giatvplayout7/giatv-211111/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Locomotion_1" tvg-name="locomotion" tvg-logo="https://ibb.co/8gBHbjMs" group-title="24/7 y más (Experimental)",Locomotion
+http://146.19.49.197:81/live/loco_hi/index.m3u8
+
+#EXTINF:-1 tvg-id="magickids" tvg-name="Magic Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logomagic96.png" group-title="24/7 y más (Experimental)",Magic Kids
+https://kiiroilabs.ddns.net/magickids/stream/stream.m3u8
+
+#EXTINF:-1 tvg-id="Espn_1" tvg-name="ESPN" tvg-logo="http://cdn.iconscout.com/icon/free/png-512/free-espn-logo-icon-svg-download-png-461787.png" group-title="24/7 y más (Experimental)",ESPN
+http://190.61.101.11:7050/play/a09k/index.m3u8?hls
+
+#EXTINF:-1 tvg-id="Espn2" tvg-name="ESPN_2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png" group-title="24/7 y más (Experimental)",ESPN 2
+http://190.61.101.11:7050/play/a05c/index.m3u8?hls
+"""
+
 # URLs de Pluto TV
 PLUTO_URLS = {
     "Pluto TV México": "https://raw.githubusercontent.com/BuddyChewChew/pluto/main/pluto_mx.m3u",
@@ -90,11 +125,10 @@ def main():
                 }
             todas_las_categorias[group_id]["items"].append(item)
 
-    # 1. Leer Canales Propios Locales
-    if os.path.exists("propios.m3u"):
-        print("Procesando canales propios...")
-        with open("propios.m3u", "r", encoding="utf-8") as f:
-            agregar_items(parse_m3u(f.readlines()))
+    # 1. Leer Canales Propios desde la variable integrada
+    print("Procesando canales propios integrados...")
+    lineas_propios = MIS_CANALES_PROPIOS.strip().split('\n')
+    agregar_items(parse_m3u(lineas_propios))
     
     # 2. Leer Pluto TV
     for group_name, url in PLUTO_URLS.items():
