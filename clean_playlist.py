@@ -5,7 +5,7 @@ import hashlib
 import unicodedata
 import os
 
-DEFAULT_LOGO = "https://i.ibb.co/d4wr01bB/tv.webp"
+DEFAULT_LOGO = "https://i.ibb.co/kszxTgHm/B74-D2-F54-1693-4-DB5-AB5-F-80-AA15987-B7-A.png"
 RAW_BASE = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/"
 
 # ==========================================
@@ -36,10 +36,10 @@ http://146.19.49.197:81/live/loco_hi/index.m3u8
 #EXTINF:-1 tvg-id="magickids" tvg-name="Magic Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/Logomagic96.png" group-title="24/7 y más (Experimental)",Magic Kids
 https://kiiroilabs.ddns.net/magickids/stream/stream.m3u8
 
-#EXTINF:-1 tvg-id="Espn_1" tvg-name="ESPN" tvg-logo="http://cdn.iconscout.com/icon/free/png-512/free-espn-logo-icon-svg-download-png-461787.png" group-title="24/7 y más (Experimental)",ESPN
+#EXTINF:-1 tvg-id="Espn_1" tvg-name="ESPN" tvg-logo="http://cdn.iconscout.com/icon/free/png-512/free-espn-logo-icon-svg-download-png-461787.png" group-title="Deportes",ESPN
 http://190.61.101.11:7050/play/a09k/index.m3u8?hls
 
-#EXTINF:-1 tvg-id="Espn2" tvg-name="ESPN_2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png" group-title="24/7 y más (Experimental)",ESPN 2
+#EXTINF:-1 tvg-id="Espn2" tvg-name="ESPN_2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png" group-title="Deportes",ESPN 2
 http://190.61.101.11:7050/play/a05c/index.m3u8?hls
 """
 
