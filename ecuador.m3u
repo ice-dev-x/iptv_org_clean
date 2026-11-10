@@ -203,3 +203,5 @@ https://cloud37.ecuatel.com/vostv/live/manifest.m3u8
 https://7.innovatestream.pe:19360/ecuadortest/ecuadortest.m3u8
 #EXTINF:-1 tvg-id="ch-30a4bcccbd4e1d93" tvg-logo="https://i.ibb.co/kszxTgHm/B74-D2-F54-1693-4-DB5-AB5-F-80-AA15987-B7-A.png" group-title="Ecuador",Zaracay TV (1080p) [Not 24/7]
 https://video2.makrodigital.com/zaracay/zaracay/playlist.m3u8
+#EXTINF:-1 tvg-id="ch-06af3ddc10e9662f" tvg-logo="https://i.ibb.co/kszxTgHm/B74-D2-F54-1693-4-DB5-AB5-F-80-AA15987-B7-A.png" group-title="Ecuador",MakroDigital Television (1080p)
+http://205.235.6.29:8000/play/a0wp/index.m3u8
